@@ -6,7 +6,9 @@ A first-person procedural dreamcore horror game: a deserted neighborhood, doors 
 
 ## Play
 
-Open the link and wait for the initial assets and shaders to prepare, then select **Enter the recording**. A desktop browser with WebGL2 and hardware acceleration works best. The full game, models, textures and sounds are embedded in `index.html`; it also runs offline when downloaded. The standalone file is approximately 96 MiB, so the first visit downloads a large file.
+Open the link and let the preparation bar reach 100%, then select **Enter the recording**. A desktop browser with WebGL2 and hardware acceleration works best. The full game, models, textures and sounds are embedded in `index.html`; it also runs offline when downloaded. The standalone file is approximately 96 MiB, so the first visit downloads a large file.
+
+The loading bar counts actual world, surface, object, sound, atmosphere and shader preparation. All 80 audio clips and a nearby destination prepare before entry. Later areas stream through a bounded background queue.
 
 The opening walk/fall is automatic. After landing, use WASD and mouse to explore. Press **E** to open or close a door, then walk through. Find the small brass key in each dimension, open its return door, and bring the key home. Each new expedition has another seed.
 
@@ -16,9 +18,9 @@ Door interiors prepare in the background. E starts the leaf moving immediately; 
 
 Nearby world fixtures light actual surfaces and cast shadows. Some faulty fittings flicker intermittently, with the visible bulb and emitted light dimming together.
 
-Some indoor worlds have power failures and sparse surviving fixtures; night vision reveals surfaces and bright light sources. Taller worlds include connected upper galleries with guarded stairs and three walkable elevations. Ten additional prop families add mortuary drawers, service carts, security desks, mail cubbies, recording equipment and maintenance clutter.
+Some indoor worlds have power failures and sparse surviving fixtures; night vision reveals surfaces and bright light sources. Taller worlds include connected upper galleries with guarded stairs and three walkable elevations. Printed inventory plates, barcode labels, fasteners and finer surface wear supplement the item detail. Repeated static props share cached geometry. Ten additional prop families add mortuary drawers, service carts, security desks, mail cubbies, recording equipment and maintenance clutter.
 
-The recording has persistent VHS grain, softness and tape drift, with additional interference reserved for seven signal-associated encounters. Ordinary hunters cause fear and breathing changes without adding static. L operates a brighter flashlight against darker ambient light. Seeded skies vary between the familiar moon, ringed giants, binary suns, eclipses and planetary conjunctions. The opening sidewalk collapses beneath your feet with a voiced fall and physical landing.
+The recording has stronger walking/running bob and side sway, depth-aware shutter blur, persistent VHS grain and tape drift, with occasional green, cyan and magenta signal lines. Gentle effects reduce camera motion and moving tape damage. Additional interference is reserved for seven signal-associated encounters. Ordinary hunters cause fear and breathing changes without adding static. L operates a brighter flashlight against darker ambient light. Seeded skies vary between the familiar moon, ringed giants, binary suns, eclipses and planetary conjunctions. The opening sidewalk collapses beneath your feet with a voiced fall and physical landing.
 
 The embedded cast includes 49 Blender assets, including an articulated emaciated pursuer, with skin and cloth bump/roughness detail. Forty-eight encounter types include patient stalkers, blind listeners, sprinters, flankers, pouncers and deceptive human-looking guides. Some imitate footsteps or beckon you toward danger; attacks telegraph and flow through anticipation, a committed strike and recovery.
 

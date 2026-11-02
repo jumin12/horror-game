@@ -1,6 +1,6 @@
 # Horror Game
 
-A first-person procedural dreamcore horror game: an empty neighborhood, doors into enormous dimensions, one hidden key per world, hunting creatures, hiding places, and a 1990s VHS camcorder.
+A first-person procedural dreamcore horror game: a deserted neighborhood, doors into enormous dimensions, one hidden key per world, hunting creatures, hiding places, and a 1990s VHS camcorder.
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
@@ -12,7 +12,11 @@ The opening walk/fall is automatic. After landing, use WASD and mouse to explore
 
 Creatures respond to sight, movement noise, light and radio lures. Quietly breaking line of sight gives you a chance to escape a search; a locker only protects you if the hunter did not see you enter. Charges have audible warnings, committed trajectories and recovery time. Creature voices and ground footsteps are positional, with walls muffling their sound.
 
-Door interiors prepare in the background. E starts the leaf moving immediately; prepared open doorways retain a distant view even when their full world leaves the nearby cache. Close views use live camera perspective.
+Door interiors prepare in the background. E starts the leaf moving immediately; prepared open doorways retain a distant view even when their full world leaves the nearby cache. Close views use live camera perspective. Close house doors when you leave: inhabitants can cross an open threshold and remain in the neighborhood. The hub can become dangerous. Closing the entrance from inside also closes its neighborhood side; opening the return door reconnects both sides.
+
+The recording has persistent VHS grain, softness and tape drift, with severe interference near entities. L operates a brighter flashlight against darker ambient light. Seeded skies vary between the familiar moon, ringed giants, binary suns, eclipses and planetary conjunctions. The opening sidewalk collapses beneath your feet with a voiced fall and physical landing.
+
+Forty-eight encounter types include patient stalkers, blind listeners, sprinters, flankers, pouncers and deceptive human-looking guides. Some imitate footsteps or beckon you toward danger; attacks telegraph and flow through anticipation, a committed strike and recovery.
 
 | Control | Action |
 | --- | --- |

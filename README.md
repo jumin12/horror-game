@@ -10,6 +10,10 @@ Open the link and wait for the initial assets and shaders to prepare, then selec
 
 The opening walk/fall is automatic. After landing, use WASD and mouse to explore. Press **E** to open or close a door, then walk through. Find the small brass key in each dimension, open its return door, and bring the key home. Each new expedition has another seed.
 
+Creatures respond to sight, movement noise, light and radio lures. Quietly breaking line of sight gives you a chance to escape a search; a locker only protects you if the hunter did not see you enter. Charges have audible warnings, committed trajectories and recovery time. Creature voices and ground footsteps are positional, with walls muffling their sound.
+
+Door interiors prepare in the background. E starts the leaf moving immediately; prepared open doorways retain a distant view even when their full world leaves the nearby cache. Close views use live camera perspective.
+
 | Control | Action |
 | --- | --- |
 | WASD / mouse | Move / look |

@@ -1,0 +1,13 @@
+# Publish only the standalone game and explicit hosting files.
+/*
+!/.gitignore
+!/.gitattributes
+!/.nojekyll
+!/index.html
+!/README.md
+!/HOSTING.md
+!/THIRD_PARTY_NOTICES.md
+!/render.yaml
+!/deploy/
+/deploy/*
+!/deploy/build.mjs

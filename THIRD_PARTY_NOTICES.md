@@ -187,3 +187,10 @@ License: [Creative Commons Attribution 3.0 Unported](https://creativecommons.org
 Changes for Horror Game: cropped neck geometry, individual head proportions and asymmetry, material tinting, attachment to articulated fictional creatures, and adapted photographic maps. The creator does not endorse this game. Attribution is also visible in the standalone game's menu.
 
 The MIT-licensed WebXR anatomical hand source credited above is also adapted for creature hands, with changed proportions, mirrored left hands, reduced geometry and creature materials.
+
+
+## Anatomical body topology and rig weights
+
+The continuous humanoid tissue mesh and reference rig weights derive from the MakeHuman Community / MPFB core graphical assets, released under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). The base mesh records Data Collection AB, Joel Palmius and Jonas Hauquier as its 2020 copyright holders before the CC0 release. [Source and asset license](https://github.com/makehumancommunity/mpfb2/blob/master/LICENSE.md).
+
+Changes: retargeted proportions and joint locations for fictional creatures, removal of covered tissue, altered anatomy, preserved UVs, reduced influence sets, and integration with the game's animation controllers. Only graphical asset data is embedded; no MPFB addon program code is included.

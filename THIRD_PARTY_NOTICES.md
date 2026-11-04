@@ -176,3 +176,14 @@ INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
 DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
+
+
+## Modified anatomical head scan
+
+The humanoid head sculpts and their photographic colour/normal maps derive from **Infinite, 3D Head Scan**, by **Lee Perry-Smith / Infinite Realities**, based on the work at [Triplegangers](https://www.triplegangers.com/). Source files and the original attribution notice are distributed in the [official Three.js model library](https://github.com/mrdoob/three.js/tree/dev/examples/models/gltf/LeePerrySmith).
+
+License: [Creative Commons Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/).
+
+Changes for Horror Game: cropped neck geometry, individual head proportions and asymmetry, material tinting, attachment to articulated fictional creatures, and adapted photographic maps. The creator does not endorse this game. Attribution is also visible in the standalone game's menu.
+
+The MIT-licensed WebXR anatomical hand source credited above is also adapted for creature hands, with changed proportions, mirrored left hands, reduced geometry and creature materials.

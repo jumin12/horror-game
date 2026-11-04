@@ -180,11 +180,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 ## Modified anatomical head scan
 
-The humanoid head sculpts and their photographic colour/normal maps derive from **Infinite, 3D Head Scan**, by **Lee Perry-Smith / Infinite Realities**, based on the work at [Triplegangers](https://www.triplegangers.com/). Source files and the original attribution notice are distributed in the [official Three.js model library](https://github.com/mrdoob/three.js/tree/dev/examples/models/gltf/LeePerrySmith).
+The retained photographic head colour/normal maps derive from **Infinite, 3D Head Scan**, by **Lee Perry-Smith / Infinite Realities**, based on the work at [Triplegangers](https://www.triplegangers.com/). Source files and the original attribution notice are distributed in the [official Three.js model library](https://github.com/mrdoob/three.js/tree/dev/examples/models/gltf/LeePerrySmith).
 
 License: [Creative Commons Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/).
 
-Changes for Horror Game: cropped neck geometry, individual head proportions and asymmetry, material tinting, attachment to articulated fictional creatures, and adapted photographic maps. The creator does not endorse this game. Attribution is also visible in the standalone game's menu.
+Changes for Horror Game: adapted photographic maps, material tinting and roughness. Current humanoid geometry uses the CC0 body topology credited below. The creator does not endorse this game. Attribution is also visible in the standalone game's menu.
 
 The MIT-licensed WebXR anatomical hand source credited above is also adapted for creature hands, with changed proportions, mirrored left hands, reduced geometry and creature materials.
 
@@ -193,4 +193,9 @@ The MIT-licensed WebXR anatomical hand source credited above is also adapted for
 
 The continuous humanoid tissue mesh and reference rig weights derive from the MakeHuman Community / MPFB core graphical assets, released under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). The base mesh records Data Collection AB, Joel Palmius and Jonas Hauquier as its 2020 copyright holders before the CC0 release. [Source and asset license](https://github.com/makehumancommunity/mpfb2/blob/master/LICENSE.md).
 
-Changes: retargeted proportions and joint locations for fictional creatures, removal of covered tissue, altered anatomy, preserved UVs, reduced influence sets, and integration with the game's animation controllers. Only graphical asset data is embedded; no MPFB addon program code is included.
+Changes: complete anatomical bodies with individually combined CC0 age, sex, muscle, weight and detail shape targets; anatomical joint placement, relaxed arm poses, fitted clothing, preserved UVs, reduced influence sets, and integration with the game's animation controllers. Full body tissue remains beneath clothing. Only graphical asset data is embedded; no MPFB addon program code is included.
+
+
+## Generated creature surfaces
+
+The skin, serpent-scale, chitin and moth-wing atlas was generated specifically for this game with OpenAI image generation, then cropped, tiled and combined with each inhabitant's surface treatment. It is original generated material artwork, not a downloaded photograph.

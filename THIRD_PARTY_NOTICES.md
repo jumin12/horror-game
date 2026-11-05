@@ -213,3 +213,7 @@ Six original architectural instruments were modeled in Blender for this game: a 
 ## Themed fieldwork and additional worlds
 
 The eight additional architectural families, seeded instrument programs, explored atlas, notebook annotations and archive book-spine atlas are original code-generated work for this game. They reuse the embedded models, materials, typeface and recordings credited above. Journal photographs are captured from the rendered game; no webcam or microphone is accessed. No additional external media is embedded by this update.
+
+## Living-world Foley and operator body
+
+Eight original object/door/paper Foley recordings were generated with ElevenLabs text-to-sound v2 for this update. The new player operator reuses the credited CC0 MakeHuman anatomical source and fitted garment construction; its rounded low shoe uppers and soles were modeled in Blender for the game. The existing MIT-licensed WebXR anatomical right hand remains the flashlight grip. No reference screenshots or API credentials are distributed.

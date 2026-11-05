@@ -198,4 +198,4 @@ Changes: complete anatomical bodies with individually combined CC0 age, sex, mus
 
 ## Generated creature surfaces
 
-The skin, serpent-scale, chitin and moth-wing atlas was generated specifically for this game with OpenAI image generation, then cropped, tiled and combined with each inhabitant's surface treatment. It is original generated material artwork, not a downloaded photograph.
+The skin, serpent-scale, chitin, moth-wing, anatomical skin and worn textile/leather atlases were generated specifically for this game with OpenAI image generation, then cropped, tiled and combined with each inhabitant's surface treatment. These are original generated material artworks, not downloaded photographs.

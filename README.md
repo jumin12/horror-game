@@ -84,6 +84,8 @@ Write on either facing page, add blank spreads, or tear out a written page and l
 | --- | --- |
 | WASD / mouse | Move / look (2.85 m/s walk, up to 6.85 m/s run) |
 | Shift / C / Space | Run / crouch / jump |
+| LMB / RMB | Hold to carry or drag / throw held object |
+| Wheel / Shift + wheel | Carrying reach / turn held object |
 | E | Doors, slide intakes, keys, supplies, objects and hiding lockers |
 | I / J / Tab / K / R | Notebook / notebook / notebook / key ring / replace battery |
 | N / L / Z | Night vision / flashlight / hold zoom |
@@ -94,6 +96,16 @@ Write on either facing page, add blank spreads, or tear out a written page and l
 | F / M / Escape | Fullscreen / mute / pause |
 
 Touch controls are included. Saves and captured footage stay in browser storage on the current device and website origin. The game does not request your real microphone or webcam.
+
+## Physical interaction
+
+Doors begin closed on a new play session, including doors previously saved open. During play they retain the position you leave them in. Use E to open/close, or hold the left mouse button and drag a door. Furniture can obstruct a moving door leaf; clearing it lets the door continue.
+
+Hold **LMB** over a loose object to pick it up. Move the view to carry it, release to drop, and press **RMB** while holding it to throw. **Mouse wheel** adjusts reach; **Shift + wheel** rotates it. Heavy movable furniture drags along the floor, and walking against it pushes it. Objects collide with the world, tumble, settle on floors and supports, and produce positional material impacts that creatures can hear. Moving a support releases the loose objects resting on it. Moved positions and rotations are saved; collecting an item removes its physical obstruction. Mounted equipment and hiding lockers keep their working controls.
+
+Every one of the 27 dimensions has its own physical clue object tied to its local job, including the aqueduct pressure gauge, disconnected telephone trunk plug, cinema film canister, clock escapement and salt-encrusted lamp. **E** inspects the object and keeps its calibration clue in the notebook. These complement the distinct three-stage themed jobs listed below.
+
+Movable furniture can block the player or brace a doorway, but hunters knock it aside and continue their pursuit. Only displaced, awake props enter the physics solver; ordinary scene dressing stays asleep. Streamed chunks retain moved objects and their controls. Registration itself runs in small loading jobs, and physics also runs beyond open doorways. In a local 1280 × 960 Balanced test of the suburb, market and reservoir, the largest background work slices were 14.1 / 12.4 / 10.5 ms; streaming frame-cost p95 was 14.3 / 8.8 / 8.3 ms. These are measured test results, not a frame-rate guarantee for other hardware.
 
 ## Dimension families
 

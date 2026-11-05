@@ -6,15 +6,15 @@ A first-person procedural dreamcore horror game: a deserted neighborhood, doors 
 
 ## Play
 
-Open the link and let the preparation bar reach 100%, then select **Enter the recording**. A desktop browser with WebGL2 and hardware acceleration works best. The full game, models, textures and sounds are embedded in `index.html`; it also runs offline when downloaded. The standalone file is approximately 99.5 MiB, so the first visit downloads a large file.
+Open the link and let the preparation bar reach 100%, then select **Enter the recording**. A desktop browser with WebGL2 and hardware acceleration works best. The full game, models, textures and sounds are embedded in `index.html`; it also runs offline when downloaded. The standalone file is approximately 99.9 MiB, so the first visit downloads a large file.
 
-The loading bar counts actual world, surface, object, sound, atmosphere and shader preparation. All 322 audio clips and a nearby destination prepare before entry. Later areas stream through a bounded background queue.
+The loading bar counts actual world, surface, object, sound, atmosphere and shader preparation. All 326 audio clips and a nearby destination prepare before entry. Later areas stream through a bounded background queue.
 
-Dimensions now use distinct architectural grammars inspired by the supplied concept references: furnished domestic shafts, enclosed suburbs, terraced villages, amber baths, yellow tube mazes, white aqueducts, glass reservoirs, apartment canyons, stocked markets, indoor snowfields, roller rinks, carpet rivers and pastel atria. Plans vary from approximately 84–1,050 metres wide and 144–1,220 metres long. Ceiling height, gallery count, bay spacing, maze layout and building arrangements vary with the seed; tall worlds also extend below their arrival floor. These are procedural architectural families, not a claim that every room is a separately authored level.
+Dimensions now use distinct architectural grammars inspired by the supplied concept references: furnished domestic shafts, enclosed suburbs, terraced villages, amber baths, yellow tube mazes, white aqueducts, glass reservoirs, apartment canyons, stocked markets, indoor snowfields, roller rinks, carpet rivers, pastel atria, glazed shopping galleries, conservatories, sleeper concourses, flooded record halls, rainy hotel courts and basement planetaria. Plans vary from approximately 84–1,050 metres wide and 144–1,220 metres long. Ceiling height, gallery count, bay spacing, maze layout and building arrangements vary with the seed; tall worlds also extend below their arrival floor. These are procedural architectural families, not a claim that every room is a separately authored level.
 
 Floors share canonical boundary vertices, including curved shores and stair openings. Stairs have treads, landings, headroom and connected walking surfaces. Raised basins have supports and coping; village terraces use continuous ring floors. Closed gables, porch columns, framed doors and windows, built-in shelving, upholstered window seats, stocked package labels and real playground slides provide closer detail. Static architecture remains present at distance without tree or building LOD swaps. Regional instancing and queued local details bound repeated exploration work.
 
-Ordinary catalog props support **E** examination, small furniture movements or machine switches; saved object states and existing mechanical curios retain their responses. Written clues can point to actual nearby scraps. Acoustic treatment follows the type and scale of space, with spatial environmental recordings and surface-dependent footsteps. The 229-asset library, including all 56 inhabitants, remains embedded.
+Ordinary catalog props support **E** examination, small furniture movements or machine switches; saved object states and existing mechanical curios retain their responses. Written clues can point to actual nearby scraps. Acoustic treatment follows the type and scale of space, with spatial environmental recordings and surface-dependent footsteps. The 235-asset library, including all 56 inhabitants, remains embedded.
 
 Large water slides have opening intake hatches and guided descents through their actual curved tubes. Press **E** at an intake. Glass currents include a pressure-lift ascent and a spiral descent; the playground slide has a shorter seated animation. The camcorder leans into turns, wind and water recordings follow the ride, and the exit returns control on a connected landing. **Escape** pauses a ride.
 
@@ -27,7 +27,7 @@ You carry a cassette recorder. Rare audio cassettes preserve damaged accounts fr
 
 Supplies are scarce: guaranteed entrance batteries and tape players are removed. Consumable caches and cassettes appear farther into each dimension, often beside or behind scenery. You still start with two spare battery packs.
 
-The opening walk/fall is automatic and lands outside the locked mansion gate. Older saves trapped within its fence are moved to the same safe approach. After landing, use WASD and mouse to explore. Press **E** to open or close a door, then walk through. Find the small brass world key, recover the return-door knob and lock cylinder, then fit the hardware at the return door with **E**. The key alone cannot release an incomplete latch. Open the repaired door and bring the key home. Successful returns trigger an automatic walk onto the street and a look back as that house contracts into a glowing atom and vanishes. Its lot stays empty in your save. Visited dimension seeds are remembered, including failed attempts, so the same world instance cannot be entered twice. Sixty-four address programs select thirteen architectural families, with seed-dependent dimensions, sections and arrangements. Each visit creates a new world instance. A large mansion occupies the center of the neighborhood behind an iron perimeter with one chained, locked gate.
+The opening walk/fall is automatic and lands outside the locked mansion gate. Older saves trapped within its fence are moved to the same safe approach. After landing, use WASD and mouse to explore. Press **E** to open or close a door, then walk through. Find the small brass world key, recover the return-door knob and lock cylinder, then fit the hardware at the return door with **E**. The key alone cannot release an incomplete latch. Open the repaired door and bring the key home. Successful returns trigger an automatic walk onto the street and a look back as that house contracts into a glowing atom and vanishes. Its lot stays empty in your save. Visited dimension seeds are remembered, including failed attempts, so the same world instance cannot be entered twice. Sixty-four address programs select nineteen architectural families, with seed-dependent dimensions, sections and arrangements. Each visit creates a new world instance. A large mansion occupies the center of the neighborhood behind an iron perimeter with one chained, locked gate.
 
 Creatures respond to sight, movement noise, light and radio lures. Quietly breaking line of sight gives you a chance to escape a search; a locker only protects you if the hunter did not see you enter. Charges have audible warnings, committed trajectories and recovery time. Creature voices and ground footsteps are positional, with walls muffling their sound.
 
@@ -54,7 +54,7 @@ Visual research used photographs of [abandoned mall fountains and galleries](htt
 
 Each dimension has only one of each freestanding prop type, including types inside furniture arrangements. Ownership persists when districts unload and when a save reloads. Equivalent duplicate meshes have been consolidated. Structural fixtures and working door mechanisms remain available wherever the building requires them. Each dimension can supply at most one additional battery, tape-player lure and cassette. The neighborhood keeps its architectural dressing.
 
-The current detail pass adds rounded construction edges, recessed fasteners, sewn upholstery, anatomical hands and connected limb joints. Fish have tapered bodies, gill edges and articulated translucent fins. Furniture uses continuous veneer rather than floorboard textures; steel and enamel retain their own finishes. The 229 active assets comprise 56 creature models and 173 other props and architectural models. Shared geometry, local detail filtering and compact mesh storage keep the standalone build below 100 MiB. Anatomical source and hand credits are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+The current detail pass adds rounded construction edges, recessed fasteners, sewn upholstery, anatomical hands and connected limb joints. Fish have tapered bodies, gill edges and articulated translucent fins. Furniture uses continuous veneer rather than floorboard textures; steel and enamel retain their own finishes. The 235 active assets comprise 56 creature models and 179 other props and architectural models. Shared geometry, local detail filtering and compact mesh storage keep the standalone build below 100 MiB. Anatomical source and hand credits are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 The latest physical-model pass covers the complete active library. Twenty-five props have rebuilt manufactured assemblies, including an inset washer drum and gasket, a rotary handset and dial, caster-supported gurneys, fan guards and shaped blades, pressure regulators, CRT equipment, water bottles and curved plant leaves. New props keep their proportions inside their reserved placement space. Material finishes distinguish enamel, steel, rubber, leather, plastic, upholstery and skin; curvature and cavity masks control localized surface variation. Existing photographic maps retain their full resolution, with lossless storage changes verified against their decoded pixels.
 
@@ -89,6 +89,36 @@ Write on either facing page, add blank spreads, or tear out a written page and l
 | F / M / Escape | Fullscreen / mute / pause |
 
 Touch controls are included. Saves and captured footage stay in browser storage on the current device and website origin. The game does not request your real microphone or webcam.
+
+## Dimension families
+
+The game has **19 architectural families**, each producing seed-dependent instances. These are family names, not a limit of 19 visits. All use the same key/return-hardware expedition, with three side puzzles and further hidden dimension doors.
+
+| Family | Space and character |
+| --- | --- |
+| Domestic Void | Warm furnished galleries around a deep residential shaft. |
+| Indoor Suburb | Streets and gardens beneath a colossal ceiling, with connected elevated neighborhoods. |
+| Terraced Village | Garden streets and linked stairs descending around a lake. |
+| Amber Baths | Warm masonry, supported basins, spillways and water slides. |
+| Tube Warren | Low yellow corridors, circular service tubes and maintenance recesses. |
+| White Aqueduct | Cool tiled colonnades, galleries, cascades and slides. |
+| Glass Estuary | Borrowed houses among transparent pressure conduits and reservoirs. |
+| Apartment Canyon | Stacked domestic rooms, bridges and deep illuminated room wells. |
+| Endless Market | Stocked aisles, period packaging and a refrigerated perimeter. |
+| Indoor Winter | Snowbanks, a cleared path and a slide beneath fluorescent columns. |
+| Last Roller Rink | Timber floor, dim green lighting, trusses, benches and a mirror ball. |
+| Carpet River | Vintage blue carpet islands, a winding channel and pink stair alcoves. |
+| Pastel Atrium | Pink galleries, cyan light wells and deep water. |
+| Sunken Galleria | Glazed shopping nave, shop shells, planting courts and end mezzanines. |
+| Glass Conservatory | Vaulted glasshouses, palms, raised planting beds and irrigation instruments. |
+| Sleeper Concourse | Parallel terminal halls, recessed rails, waiting structures and a split-flap instrument. |
+| Flooded Record Hall | Narrow book-stack aisles, shallow water and raised service galleries. |
+| Tide Hotel | Rain through an open courtyard roof, sheltered balconies and linked stairs. |
+| Basement Planetarium | Star domes, radial ribs, observation seating and a detailed telescope. |
+
+The audit adds static indirect-light volumes traced from actual fixtures and structural occluders, alongside the nearby shadow-casting lights. Fittings sit outside solid walls; stairs have aligned landings and visible stringers, and deep floors remain usable below 100 metres. Gardens, masonry, joinery, paintings, snowbanks, ducts and environmental props follow the location. Freestanding prop types still occur once per dimension.
+
+Six new Blender instruments and four original ElevenLabs room tones are embedded. Conservatory irrigation, galleria ventilation, terminal air and rain-on-glass have their own recordings; the archive and planetarium combine these with existing ambience. Source models, recordings and generation provenance remain in the local development workspace.
 
 ## Hosting
 

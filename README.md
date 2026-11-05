@@ -1,6 +1,6 @@
 # Horror Game
 
-A first-person procedural dreamcore horror game: a deserted neighborhood, doors into enormous dimensions, one hidden key per world, hunting creatures, hiding places, and a 1990s VHS camcorder.
+A first-person procedural dreamcore horror game: a deserted neighborhood, doors into enormous dimensions, 27 distinct world jobs, one released key per world, hunting creatures, hiding places, and a 1990s VHS camcorder.
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
@@ -10,7 +10,7 @@ Open the link and let the preparation bar reach 100%, then select **Enter the re
 
 The loading bar counts actual world, surface, object, sound, atmosphere and shader preparation. All 326 audio clips and a nearby destination prepare before entry. Later areas stream through a bounded background queue.
 
-Dimensions now use distinct architectural grammars inspired by the supplied concept references: furnished domestic shafts, enclosed suburbs, terraced villages, amber baths, yellow tube mazes, white aqueducts, glass reservoirs, apartment canyons, stocked markets, indoor snowfields, roller rinks, carpet rivers, pastel atria, glazed shopping galleries, conservatories, sleeper concourses, flooded record halls, rainy hotel courts and basement planetaria. Plans vary from approximately 84–1,050 metres wide and 144–1,220 metres long. Ceiling height, gallery count, bay spacing, maze layout and building arrangements vary with the seed; tall worlds also extend below their arrival floor. These are procedural architectural families, not a claim that every room is a separately authored level.
+Dimensions now use distinct architectural grammars inspired by the supplied concept references: furnished domestic shafts, enclosed suburbs, terraced villages, amber baths, yellow tube mazes, white aqueducts, glass reservoirs, apartment canyons, stocked markets, indoor snowfields, roller rinks, carpet rivers, pastel atria, glazed shopping galleries, conservatories, sleeper concourses, flooded record halls, rainy hotel courts, basement planetaria, industrial laundries, deserted cinemas, telephone exchanges, freight cathedrals, mirrored offices, storm reservoirs, clock libraries and salt mines. The eight latest worlds and the preceding six additions now occupy footprints of 480–900 metres wide and 660–1,140 metres long; older families retain their own distinct scales and heights. Ceiling height, gallery count, bay spacing, maze layout and building arrangements vary with the seed; tall worlds also extend below their arrival floor. These are procedural architectural families, not a claim that every room is a separately authored level.
 
 Floors share canonical boundary vertices, including curved shores and stair openings. Stairs have treads, landings, headroom and connected walking surfaces. Raised basins have supports and coping; village terraces use continuous ring floors. Closed gables, porch columns, framed doors and windows, built-in shelving, upholstered window seats, stocked package labels and real playground slides provide closer detail. Static architecture remains present at distance without tree or building LOD swaps. Regional instancing and queued local details bound repeated exploration work.
 
@@ -27,9 +27,11 @@ You carry a cassette recorder. Rare audio cassettes preserve damaged accounts fr
 
 Supplies are scarce: guaranteed entrance batteries and tape players are removed. Consumable caches and cassettes appear farther into each dimension, often beside or behind scenery. You still start with two spare battery packs.
 
-The opening walk/fall is automatic and lands outside the locked mansion gate. Older saves trapped within its fence are moved to the same safe approach. After landing, use WASD and mouse to explore. Press **E** to open or close a door, then walk through. Find the small brass world key, recover the return-door knob and lock cylinder, then fit the hardware at the return door with **E**. The key alone cannot release an incomplete latch. Open the repaired door and bring the key home. Successful returns trigger an automatic walk onto the street and a look back as that house contracts into a glowing atom and vanishes. Its lot stays empty in your save. Visited dimension seeds are remembered, including failed attempts, so the same world instance cannot be entered twice. Sixty-four address programs select nineteen architectural families, with seed-dependent dimensions, sections and arrangements. Each visit creates a new world instance. A large mansion occupies the center of the neighborhood behind an iron perimeter with one chained, locked gate.
+The opening walk/fall is automatic and lands outside the locked mansion gate. Older saves trapped within its fence are moved to the safe approach. After landing, use WASD and mouse to explore. Press **E** to open or close a door, then walk through its live view. Each dimension has an authored, three-stage job tied to its setting: dispatch a train, restore an aqueduct, screen a lost film, reconnect an exchange, or complete another world-specific task. Notes explain controls and give clues. Complete the job to release its sealed brass key, then open the return door and bring the key home. Tasks and receiving stations are distributed across the world, sometimes on another connected floor. **Q** gives the next task's distance, compass bearing, elevation and whether to take stairs up or down.
 
-Creatures respond to sight, movement noise, light and radio lures. Quietly breaking line of sight gives you a chance to escape a search; a locker only protects you if the hunter did not see you enter. Charges have audible warnings, committed trajectories and recovery time. Creature voices and ground footsteps are positional, with walls muffling their sound.
+The campaign assigns at most **one house to each of 27 architectural families**. Once a family is entered, neither another house nor a hidden passage can offer it again. Its authored job program is also retired: there is no reroll after failure. Hidden passages draw from the same unused roster and may therefore consume a house's destination. Completed outer houses collapse into a glowing atom and leave an empty lot. This is a finite campaign of 27 distinct world/job families with procedural layouts and settings, rather than unlimited nonrepeating authored puzzle mechanics. New campaigns generate different seeds. Known visits from older saves migrate into the retirement ledger. A large mansion occupies the center behind an iron perimeter with one chained gate.
+
+Creatures respond to sight, movement noise, light and radio lures. Quietly breaking line of sight gives you a chance to escape a search; a locker only protects you if the hunter did not see you enter. Charges have audible warnings, committed trajectories and recovery time. Creature voices and ground footsteps are positional, with walls muffling their sound. Hunters retain observations longer, commit more strongly at close range, and use bounded background path searches with safe local steering and recovery around obstructions. Breaking sight and using cover still matters.
 
 Door interiors prepare in the background. E starts the leaf moving immediately; prepared open doorways retain a distant view even when their full world leaves the nearby cache. Open house doors fold wide against the facade; their solid panels have separated surfaces to avoid texture interference. Doorway views clip against the camera near plane to remain stable at steep angles. Nearby open doors show the actual live destination out to 180 metres, twice the previous range. Walking through retains that world, its inhabitants, positions and simulation state. Populations are seeded: many arrivals are empty, and opening a door never stages an encounter. Your held flashlight shines across the threshold with the same aim, hotspot and soft spill. Door leaves, walls and creatures cast shadows into the beam; illuminated dust and depth-bounded haze make its volume visible. Creatures can notice the flashlight through an open doorway and physically follow the observed player into the hub. Close house doors when you leave: inhabitants can cross an open threshold and remain in the neighborhood. The hub can become dangerous. Closing the entrance from inside also closes its neighborhood side; opening the return door reconnects both sides.
 
@@ -66,15 +68,17 @@ Hunters still use sight, noise, light, remembered positions, navigation and real
 
 Some hunters hide their bodies behind corners and lean their heads out to watch before rushing. Others stare and smile before closing the distance. Grabbing predators can seize and drag you away: repeatedly press **Space**, or tap the on-screen escape button, to break free. Holding the key does not count as repeated presses. Escaping briefly staggers the predator, then it resumes the chase; failing the struggle is fatal.
 
-Dimensions also contain two concealed, unmarked service-door alcoves leading into further full-size procedural dimensions. Press **E** and walk through as at a neighborhood house: the live view, flashlight and destination inhabitants belong to the world you enter. Descendants have their own key, missing exit hardware, side rooms, notes, curiosities and further hidden doors. Completing a descendant returns you to its parent and seals that child branch. Your parent key, partial repairs, notebook and object states remain intact. Completing the outermost dimension still returns you to the neighborhood and collapses its house. Ancestry and completed branches survive saving and reloading. Only the immediate parent stays cached; older ancestors prepare in the background, keeping nested exploration from retaining an ever-growing pile of live worlds.
+Dimensions also contain two concealed, unmarked service-door alcoves that can lead into unused full-size worlds. Press **E** and walk through as at a neighborhood house: the live view, flashlight and destination inhabitants belong to the exact world you enter. Each descendant has its own themed job and key. Completing it returns you to its parent and seals that branch. Partial device settings, notebook and object states remain intact through returns and save/reload. Only the immediate parent stays cached; older ancestors prepare in the background. When no unused family remains, a passage stays sealed.
 
 Model data uses compact sub-millimetre position storage, encoded normals and precision-checked UVs, compressed inside the standalone HTML and decoded locally before preparation. Articulation and material assignments are preserved. Shared object templates, a maximum of 25 detailed streamed cells and five local hunters bound active detail; retired hunters release their individual materials.
 
-Each dimension now has three sealed side annexes beside its long service route. Two contain the missing return-door hardware; the third is an optional supply cache. Their locks vary between a stamped room key, three lockpick pins, and a damaged spring-and-cam latch. Required keys, tools and handwritten solution slips are outside the rooms, so their own locks cannot trap them. Pins and cams retain their settings; solved rooms can be opened and closed normally. Shelves, parts trays, tool cases, letters, writing stations and 16 additional Blender hardware/paper props add detail and clues.
+The repeated knob/cylinder/three-annex expedition has been replaced by the world's themed job. Its ordered combination of instruments, clues, spatial travel and completion conditions differs in every family. Shared interactions include channel patching, valve balance, timing contacts, a nine-cell service grid, chronological records, carried deliveries and actual camcorder surveys. Each family has a different ordered three-stage program, with persistent settings and a gated key.
 
-The notebook has an aged paper spread, an embedded handwritten typeface, inventory, a key ring, writable pages and an archive of found scraps. Press **K** to go straight to the ring. Select a key to name its paper tag; **Rewrite this tag** clears the label for a new name. Renaming never changes the lock a key fits. Key labels, notes, solved locks and fitted hardware persist in saves. Lost keys remain recorded as lost; returned keys stay on the ring.
+The notebook has an aged paper spread, an embedded handwritten typeface, inventory, a key ring, writable pages and an archive of found scraps. Press **K** to go straight to the ring. Select a key to name its paper tag; **Rewrite this tag** clears the label for a new name. Renaming never changes the lock a key fits. Key labels, notes, completed jobs and device settings persist in saves. Lost keys remain recorded as lost; returned keys stay on the ring.
 
-Write on either facing page, add blank spreads, or tear out a written page and leave it as a physical note at your feet. Read it with **E** and optionally put it back in the notebook. Pages persist in their originating world and can guide you through its corridors. Read environmental scraps with **E**: they include repair clues and a bearing toward the actual nearest unread scrap. **Q** helps locate one. There is no map. The notebook pauses gameplay while open. Text highlighting and dragging are disabled throughout the game, including writing fields; ordinary typing and caret movement work normally.
+Write on either facing page, add blank spreads, or tear out a written page and leave it at your feet. Read it with **E** and optionally put it back. Environmental scraps now explain the local job instead of substituting for it.
+
+**G** opens an explored map in the notebook. Unseen space stays unknown; maps record separate elevations, your trail, and nearby visible stairs and instruments. Pan, zoom, draw pencil routes, leave danger/door/clue labels, erase or undo marks, and switch between recorded locations and floors. **B** takes a photograph of the actual game scene and creates a geotagged field observation. Edit its creature/location title and notes, pin it to the map, or paste it onto a writing page. The first job and notebook guide these controls. Maps, drawings, photographs and entries survive saving and reloading. Storage is bounded to 24 photographs and 160 observations, with up to three photographs per page. The notebook pauses gameplay. Text highlighting is disabled throughout the game; ordinary typing and caret movement work normally.
 
 | Control | Action |
 | --- | --- |
@@ -83,7 +87,8 @@ Write on either facing page, add blank spreads, or tear out a written page and l
 | E | Doors, slide intakes, keys, supplies, objects and hiding lockers |
 | I / J / Tab / K / R | Notebook / notebook / notebook / key ring / replace battery |
 | N / L / Z | Night vision / flashlight / hold zoom |
-| Q | Contextual clue |
+| Q | Next job, distance, compass direction, and elevation |
+| B / G | Photograph scene / explored map and annotations |
 | P / V | Keep footage / replay footage |
 | T | Stop the audio cassette |
 | F / M / Escape | Fullscreen / mute / pause |
@@ -92,33 +97,43 @@ Touch controls are included. Saves and captured footage stay in browser storage 
 
 ## Dimension families
 
-The game has **19 architectural families**, each producing seed-dependent instances. These are family names, not a limit of 19 visits. All use the same key/return-hardware expedition, with three side puzzles and further hidden dimension doors.
+The campaign contains **27 architectural families and 27 distinct themed job programs**. Each family is available once per campaign, including hidden descendants. Seeds vary geometry, size and device settings; some control mechanics are shared across different jobs.
 
-| Family | Space and character |
+| Dimension | Themed job |
 | --- | --- |
-| Domestic Void | Warm furnished galleries around a deep residential shaft. |
-| Indoor Suburb | Streets and gardens beneath a colossal ceiling, with connected elevated neighborhoods. |
-| Terraced Village | Garden streets and linked stairs descending around a lake. |
-| Amber Baths | Warm masonry, supported basins, spillways and water slides. |
-| Tube Warren | Low yellow corridors, circular service tubes and maintenance recesses. |
-| White Aqueduct | Cool tiled colonnades, galleries, cascades and slides. |
-| Glass Estuary | Borrowed houses among transparent pressure conduits and reservoirs. |
-| Apartment Canyon | Stacked domestic rooms, bridges and deep illuminated room wells. |
-| Endless Market | Stocked aisles, period packaging and a refrigerated perimeter. |
-| Indoor Winter | Snowbanks, a cleared path and a slide beneath fluorescent columns. |
-| Last Roller Rink | Timber floor, dim green lighting, trusses, benches and a mirror ball. |
-| Carpet River | Vintage blue carpet islands, a winding channel and pink stair alcoves. |
-| Pastel Atrium | Pink galleries, cyan light wells and deep water. |
-| Sunken Galleria | Glazed shopping nave, shop shells, planting courts and end mezzanines. |
-| Glass Conservatory | Vaulted glasshouses, palms, raised planting beds and irrigation instruments. |
-| Sleeper Concourse | Parallel terminal halls, recessed rails, waiting structures and a split-flap instrument. |
-| Flooded Record Hall | Narrow book-stack aisles, shallow water and raised service galleries. |
-| Tide Hotel | Rain through an open courtyard roof, sheltered balconies and linked stairs. |
-| Basement Planetarium | Star domes, radial ribs, observation seating and a detailed telescope. |
+| Domestic Void | Recall the missing floor. |
+| Indoor Suburb | Deliver the undeliverable post. |
+| Terraced Village | Give the lake back its tide. |
+| Amber Baths | Reheat the lower baths. |
+| Tube Warren | Find the breathing tube. |
+| White Aqueduct | Restart the aqueduct. |
+| Glass Estuary | Trace the borrowed current. |
+| Apartment Canyon | Answer the absent tenants. |
+| Endless Market | Close the store properly. |
+| Indoor Winter | Thaw a path through winter. |
+| Last Roller Rink | Play the final side. |
+| Carpet River | Divert the river under the carpet. |
+| Pastel Atrium | Wake the color wells. |
+| Sunken Galleria | Make the galleria announce closing. |
+| Glass Conservatory | Keep the conservatory alive. |
+| Sleeper Concourse | Dispatch the train that never came. |
+| Flooded Record Hall | Refile the drowned archive. |
+| Tide Hotel | Lower the tide inside the hotel. |
+| Basement Planetarium | Return the false sky to its orbit. |
+| After-hours Laundry | Finish the ownerless wash. |
+| Red Picturehouse | Screen the lost reel. |
+| Telephone Exchange | Connect the last caller. |
+| Freight Cathedral | Release the wrong freight. |
+| Mirror Office | Undo the mirrored office. |
+| Storm Reservoir | Survive the reservoir surge. |
+| Clock Library | File the hour that was removed. |
+| Salt Mine | Vent the salt below the city. |
 
 The audit adds static indirect-light volumes traced from actual fixtures and structural occluders, alongside the nearby shadow-casting lights. Fittings sit outside solid walls; stairs have aligned landings and visible stringers, and deep floors remain usable below 100 metres. Gardens, masonry, joinery, paintings, snowbanks, ducts and environmental props follow the location. Freestanding prop types still occur once per dimension.
 
 Six new Blender instruments and four original ElevenLabs room tones are embedded. Conservatory irrigation, galleria ventilation, terminal air and rain-on-glass have their own recordings; the archive and planetarium combine these with existing ambience. Source models, recordings and generation provenance remain in the local development workspace.
+
+Balanced rendering is now the default, with adaptive internal resolution, bounded detail cells, shared archive-book atlas rows, and scheduled shadow updates. Distant materials remain opaque instead of using noisy distance dithering. In a local 1,280 × 960 hardware-rendered comparison with three active hunters, median rendering cost improved from 23.1 to 10.5 ms in Domestic Void, 16.9 to 8.3 ms in the Market, and 14.0 to 11.9 ms in Tide Hotel. These are scene-specific measurements, not a guaranteed frame rate; loading, hardware, resolution and camera view affect results. The standalone retains all 235 models and 326 recordings.
 
 ## Hosting
 

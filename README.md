@@ -181,3 +181,12 @@ All 27 dimensions add six distinct searchable containers with persistent hinged 
 The complete player body uses continuous anatomical skin and a shared skeleton beneath fitted clothing, with modeled low shoes and walking/crouching poses. Its right shoulder and elbow reach the actual flashlight cuff. Reflections use the same wrist, grip and flashlight motion as the first-person arm. The camera hides its own head and duplicate arms; reflections retain the complete body.
 
 Twenty-seven humanoids received individual anatomical proportions in Blender, followed by a second pass on eighteen identities. Connected coat hems share the waist skin weights and follow the thighs; concealed inner trouser fabric is excluded from rendering to prevent cloth crossing during attacks. Altered sensory structures, masked heads, and individual bark, chitin, wax and reflective surfaces provide more distinct silhouettes. Stride length, pace, arm swing, asymmetry and attention motions vary by identity.
+
+
+## Connected regions within every dimension
+
+Each of the 27 dimensions now contains six persistent, seeded regions (162 individually named regions across the world roster). These stay within the existing large world footprint. Their architectural itineraries mix furnished passages, archive/depot aisles, greenhouse courts, bath wings, service plants, exhibition colonnades, performance spaces, winter areas and dark utility wings, selected to suit the parent dimension. Narrow gallery worlds receive fitted smaller sections; the complete worlds remain large.
+
+Regions change the actual floor material, architectural surfaces, fixture color and intensity, supported room construction, local furnishing preferences and acoustics. Interior piers support the ceilings; planters, shelves and machinery sit beside a continuous central passage. Existing floor triangles are assigned materials directly, preserving the original joined vertices, UVs, water openings and stair holes. Region structures are reserved before the main architectural grammar, then fitted around existing load-bearing elements. Mission routes and stair reservations retain clearance.
+
+Ambient recordings crossfade after a short boundary dwell, and reverb follows the local region. Surface footsteps follow the rendered floor. Region names appear as discovered areas in the notebook survey. This adds internal variety without adding loading screens, splitting a dimension into separate maps, or reusing a completed world.

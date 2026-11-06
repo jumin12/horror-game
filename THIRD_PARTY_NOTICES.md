@@ -246,3 +246,10 @@ The following meshes and their original PBR surface maps are from [Poly Haven](h
 | quality-covered-car | [covered_car](https://polyhaven.com/a/covered_car) | MP |
 
 The uncovered estate car, desk telephone, wire shopping basket, mailbox, wheeled bin, concave birdbath, pressure receiver, small steel tin, ink bottle and pencil cup were remodeled in Blender for this game. The keypad, vehicle registration plates and calibrated puzzle plates are original generated artwork. Existing environmental and object recordings retain their ElevenLabs provenance above; this pass adds no new external audio.
+
+
+### Horror anatomy and discovery additions
+
+The new organic material atlas is original AI-generated artwork made for this game. The added neck supports, ear concha, secondary limbs, oral membrane and articulated tails were constructed and sculpted in Blender. They extend the anatomical source licensing described above. They are original creatures rather than reproductions of film characters.
+
+Twelve additional sound-effect recordings were generated with the authorized ElevenLabs account using `eleven_text_to_sound_v2`: pressure knocks and water surge; winding, relay, shutter, glass, ceramic and drawer Foley; cartilage folding and adhesive ceiling movement; hollow timber and air-chamber ambience. The embedded game contains audio assets only, with no account credential. The local generation manifest preserves prompts, durations and SHA-256 provenance. No Meshy asset was generated for this pass because the configured credential was rejected.

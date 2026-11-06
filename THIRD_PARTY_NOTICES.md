@@ -217,3 +217,32 @@ The eight additional architectural families, seeded instrument programs, explore
 ## Living-world Foley and operator body
 
 Eight original object/door/paper Foley recordings were generated with ElevenLabs text-to-sound v2 for this update. The new player operator reuses the credited CC0 MakeHuman anatomical source and fitted garment construction; its rounded low shoe uppers and soles were modeled in Blender for the game. The existing MIT-licensed WebXR anatomical right hand remains the flashlight grip. No reference screenshots or API credentials are distributed.
+
+
+## Authored close-range prop library
+
+The following meshes and their original PBR surface maps are from [Poly Haven](https://polyhaven.com/), released under [CC0 1.0 Universal](https://polyhaven.com/license). The sources were imported through Blender with their authored UVs and surface normals. Changes: metre-scale fitting, ground alignment, runtime texture packing, material integration and a transparent clock-front correction. The creators do not endorse this game.
+
+| Game prop | Source | Creator |
+| --- | --- | --- |
+| loungechair | [mid_century_lounge_chair](https://polyhaven.com/a/mid_century_lounge_chair) | Kuutti Siitonen |
+| wornsofa | [sofa_03](https://polyhaven.com/a/sofa_03) | Fran Calvente |
+| sidechair | [SchoolChair_01](https://polyhaven.com/a/SchoolChair_01) | Ethan Place |
+| schooldesk | [SchoolDesk_01](https://polyhaven.com/a/SchoolDesk_01) | Ethan Place |
+| diningtable | [dining_table](https://polyhaven.com/a/dining_table) | Aron Łyczek |
+| bedsidetable | [ClassicNightstand_01](https://polyhaven.com/a/ClassicNightstand_01) | Kirill Sannikov |
+| drawerchest | [vintage_wooden_drawer_01](https://polyhaven.com/a/vintage_wooden_drawer_01) | James Ray Cock |
+| wardrobe | [GothicCabinet_01](https://polyhaven.com/a/GothicCabinet_01) | Kirill Sannikov |
+| grandfatherclock | [vintage_grandfather_clock_01](https://polyhaven.com/a/vintage_grandfather_clock_01) | Yann Kervran, James Ray Cock |
+| toolcase | [metal_toolbox](https://polyhaven.com/a/metal_toolbox) | Mateusz Sadek |
+| traveltrunk | [vintage_suitcase](https://polyhaven.com/a/vintage_suitcase) | Maximilian Schuster |
+| streetbench | [painted_wooden_bench](https://polyhaven.com/a/painted_wooden_bench) | Kirill Sannikov |
+| dressing-fireextinguisher | [korean_fire_extinguisher_01](https://polyhaven.com/a/korean_fire_extinguisher_01) | UM JOORIN |
+| wheelchair | [wheelchair_01](https://polyhaven.com/a/wheelchair_01) | Garreth Dean |
+| dressing-generator | [portable_generator](https://polyhaven.com/a/portable_generator) | James Ray Cock |
+| dressing-servicecart | [tool_cart](https://polyhaven.com/a/tool_cart) | Savva Zakharov |
+| dressing-radioarray | [vintage_radio_transceiver](https://polyhaven.com/a/vintage_radio_transceiver) | Mateusz Sadek |
+| dressing-trashbin | [metal_trash_can](https://polyhaven.com/a/metal_trash_can) | GurJas Studios |
+| quality-covered-car | [covered_car](https://polyhaven.com/a/covered_car) | MP |
+
+The uncovered estate car, desk telephone, wire shopping basket, mailbox, wheeled bin, concave birdbath, pressure receiver, small steel tin, ink bottle and pencil cup were remodeled in Blender for this game. The keypad, vehicle registration plates and calibrated puzzle plates are original generated artwork. Existing environmental and object recordings retain their ElevenLabs provenance above; this pass adds no new external audio.

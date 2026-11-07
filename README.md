@@ -249,3 +249,29 @@ In a separate two-creature White Aqueduct CPU profile, the 95th-percentile simul
 These are scene-specific measurements on this machine with the same resolution and view, rather than a guaranteed frame rate. Network transfer of the approximately 100 MB standalone, cold shader compilation, new-world preparation, hardware and quality settings still affect loading and frame times. The changes improve the existing embedded materials and rendering; they do not claim new 8K source textures or parity with Unreal Engine.
 
 The downward first-person view retains the opaque jacket, trousers and boots. Head and facial visibility follows anatomical weights instead of a horizontal cut through the body, including while crouching or running. The lens stays ahead of the chest; reflections retain the complete head and body.
+
+
+## Rare environmental creatures and distinct encounters
+
+Environmental abilities belong to **seven of the 56 identities**, spread across seven of the 27 world families. The other 20 families have none. These are available encounters, not guaranteed spawns in each visit.
+
+| Creature | Environmental behavior |
+| --- | --- |
+| Orchard Widow | Slowly grows attached mushrooms along its route |
+| Unseen | Extinguishes nearby visible light fittings; they recover after it leaves |
+| Lamplighter | Causes irregular interference in nearby visible fittings |
+| Stair Animal | Pulls loose ordinary props with collision physics, leaving protected supplies and objective items alone |
+| Window Guest | Leaves condensation on physical walls with drifting local mist |
+| Water Guest | Leaves supported wet patches and falling droplets; footsteps recognize the wet ground |
+| Last Escort | Creates drafts that close ordinary interior doors, with their normal animation and latch sound |
+
+The rest of the cast gains contrast through pursuit and anatomy. Serpentine hunters pause and approach laterally; auditory hunters stop to locate noise; heavy creatures plant their weight and accelerate slowly; runners change their approach; false guides reveal themselves at different distances. Attack anticipation, strike speed, commitment and recovery differ by anatomy and identity. Crawlers, segmented bodies, insects, antlered creatures and membrane forms have additional attached attack poses. Their existing exclusive models, surface sets and individual recordings remain intact.
+
+Deposits and particles live in the actual destination scene, including when viewed through an open house. Entering adopts the same state and prepared fixture shadow maps. Floor and wall support checks prevent floating deposits. Growth uses capped instancing; ecological particles use one capped 256-particle batch per relevant world. Ordinary worlds allocate no new ecological geometry. Door drafts exclude the return exit, neighborhood transport doors, nested-world gates and doors immediately beside the player.
+
+Powered fittings provide a larger share of light through pooled real-time shadowed spotlights. Shafts use depth testing and the actual fitting shadow map, so walls occlude them. Directional sconces aim into their rooms, emissive fixtures and architectural bounce respond to power faults, and bloom preserves a sharper highlight core. Static damp roughness adds local material response without moving texture coordinates or adding bitmap downloads.
+
+Validation covers all 27 layouts, 162 district traversals, 81 puzzle stages, the seven environmental identities, all 56 animated rigs, actual prop physics, open-door scene adoption, lighting, sound, interaction and capture recovery. Effects use bounded pools and existing recordings; no new service key or external asset request is required. Browser hardware, preparation and quality settings still determine frame times.
+
+
+A same-session comparison of the rare-ecology build against its immediate predecessor used Balanced quality, seed 4919 and an unchanged 1,280 x 960 buffer. Startup measured 22.14 s versus 21.91 s, with 269 GPU textures in both. CPU frame medians were 3.2/7.5/16.2/8.8 ms for the neighborhood, aqueduct, two-creature aqueduct and market, versus 3.3/7.4/16.3/8.3 ms before. GPU medians were 1.50/5.85/9.73/6.72 ms, versus 1.34/6.22/9.87/5.84 ms. Texture counts at every measured scene matched the predecessor. The added rendering has a measurable cost in some views; these samples are not a frame-rate guarantee.

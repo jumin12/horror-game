@@ -239,3 +239,5 @@ A local hardware-rendered comparison at a fixed 1,280 × 960, Balanced quality, 
 In a separate two-creature White Aqueduct CPU profile, the 95th-percentile simulation update fell from 13.7 to 2.4 ms after indexing floor contacts; rendering remained a separate cost.
 
 These are scene-specific measurements on this machine with the same resolution and view, rather than a guaranteed frame rate. Network transfer of the approximately 100 MB standalone, cold shader compilation, new-world preparation, hardware and quality settings still affect loading and frame times. The changes improve the existing embedded materials and rendering; they do not claim new 8K source textures or parity with Unreal Engine.
+
+The downward first-person view retains the opaque jacket, trousers and boots. Head and facial visibility follows anatomical weights instead of a horizontal cut through the body, including while crouching or running. The lens stays ahead of the chest; reflections retain the complete head and body.

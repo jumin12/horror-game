@@ -10,7 +10,7 @@ Open the link and let the preparation bar reach 100%, then select **Enter the re
 
 Press **H** or **F1** for a four-page field guide covering movement, vision, physical objects, danger and the notebook. It is also available from the pause menu. Short optional field hints explain the next unfamiliar control during safe moments. Guide pages support keyboard navigation and narrow screens. Jump input has a brief landing buffer and ledge grace period.
 
-The loading bar counts actual world, surface, object, sound, atmosphere and shader preparation. All 346 audio clips, the actual falling destination, and three houses nearest the landing prepare before entry. Repeated shader layouts and already uploaded geometry reuse their prepared data. Later areas stream through a bounded background queue that uses measured frame headroom, with a small capped work slice during play.
+The loading bar counts actual world, surface, object, sound, atmosphere and shader preparation. The complete 346-clip library remains embedded. Core Foley, the actual falling destination and one complete house nearest the landing prepare before entry; other worlds and their exclusive creature recordings prepare as you approach. Repeated shader layouts and already uploaded geometry reuse their prepared data. Later areas stream through a bounded background queue that uses measured frame headroom, with a small capped work slice during play.
 
 Dimensions now use distinct architectural grammars inspired by the supplied concept references: furnished domestic shafts, enclosed suburbs, terraced villages, amber baths, yellow tube mazes, white aqueducts, glass reservoirs, apartment canyons, stocked markets, indoor snowfields, roller rinks, carpet rivers, pastel atria, glazed shopping galleries, conservatories, sleeper concourses, flooded record halls, rainy hotel courts, basement planetaria, industrial laundries, deserted cinemas, telephone exchanges, freight cathedrals, mirrored offices, storm reservoirs, clock libraries and salt mines. Every dimension has a footprint of at least 480 × 660 metres. Larger families extend to roughly a kilometre across, with distinct heights, galleries, districts and route structures. Ceiling height, gallery count, bay spacing, maze layout and building arrangements vary with the seed; tall worlds also extend below their arrival floor. These are procedural architectural families, not a claim that every room is a separately authored level.
 
@@ -163,7 +163,7 @@ The audit adds static indirect-light volumes traced from actual fixtures and str
 
 Six new Blender instruments and four original ElevenLabs room tones are embedded. Conservatory irrigation, galleria ventilation, terminal air and rain-on-glass have their own recordings; the archive and planetarium combine these with existing ambience. Source models, recordings and generation provenance remain in the local development workspace.
 
-Balanced rendering is now the default, with adaptive internal resolution, bounded detail cells, shared archive-book atlas rows, and scheduled shadow updates. Distant materials remain opaque instead of using noisy distance dithering. In an earlier local 1,280 × 960 hardware-rendered comparison with three active hunters, median rendering cost improved from 23.1 to 10.5 ms in Domestic Void, 16.9 to 8.3 ms in the Market, and 14.0 to 11.9 ms in Tide Hotel. These are scene-specific measurements, not a guaranteed frame rate; loading, hardware, resolution and camera view affect results. The standalone retains all 237 models and 334 recordings.
+Balanced rendering is now the default, with adaptive internal resolution, bounded detail cells, shared archive-book atlas rows, and scheduled shadow updates. Distant materials remain opaque instead of using noisy distance dithering. In an earlier local 1,280 × 960 hardware-rendered comparison with three active hunters, median rendering cost improved from 23.1 to 10.5 ms in Domestic Void, 16.9 to 8.3 ms in the Market, and 14.0 to 11.9 ms in Tide Hotel. These are scene-specific measurements, not a guaranteed frame rate; loading, hardware, resolution and camera view affect results. The standalone retains all 249 models and 346 recordings.
 
 The streaming pass divides floor buffers, street materials, edge construction, collision indexing, indirect-light baking and nearby encounter routes into smaller background jobs. Nearby detail finishes before it becomes visible; interrupted work releases its staged groups and resources. Loaded detail stays bounded to 25 cells. A stable approach prefetches one closed doorway, while open-door views retain their 180-metre live range and explicit interactions take priority. Interactive curios have one persistent location owner per model, including across unload/reload.
 
@@ -217,3 +217,25 @@ Each dimension includes 12 distinct persistent mechanisms along exploration rout
 Twelve further ElevenLabs recordings cover object operation, organic joint movement, ceiling contact and quiet structural ambience (346 recordings total). New generated organic material sources supply skin, hide, chitin, membrane, wax, bark and cartilage detail. Models, textures and recordings remain embedded in the single HTML file; no service key is shipped.
 
 Validation includes the complete 27-world route and 81-stage puzzle audit, 324 supported nonduplicate mechanisms, all 56 idle/attack rigs, shared-vertex skin weights, grabbing/escape/pursuit, corner peeking, low-ceiling folds, wall-to-ceiling transitions, jumping and landing. All 12 new mechanisms were exercised with actual E input, and the new recordings were decoded and checked for peak level, RMS and duration. This remains a browser game; these changes do not claim parity with a full AAA production.
+
+
+## Bodycam rendering and loading
+
+The mesh archive now expands on demand without changing its geometry, UVs or skin weights. Only resident creature templates and surface sets stay active; unused templates release GPU resources and reconstruct from the immutable archive when needed. Regional sound buffers have a separate resident cache, with destination ambience and all four voice/footstep recordings per owned creature ready before a doorway can open. Encoded recordings remain available for later areas. Vertical footstep contacts use a prebuilt spatial triangle index with the original floor geometry, UVs and material groups; they avoid rescanning the entire level. Door picking rejects distant leaves before checking their detailed meshes.
+
+The camera has a wider lens, damped vertical movement and clearer recovered detail while retaining adjustable VHS grain, chromatic faults and tape movement. HDR highlight extraction and separable bloom preserve fixture color. Flashlight air integrates real scene depth and shadow visibility at reduced resolution, then uses depth-aware reconstruction to retain wall edges. Static shadow maps are reused; camera movement, doors, physics, nearby creatures and working mechanisms invalidate them immediately. Water uses world-anchored ripples, grazing-angle reflections and a roughness filter, with reflection resolution and refresh rate following the quality setting.
+
+A local hardware-rendered comparison at a fixed 1,280 × 960, Balanced quality, seed 4919 measured:
+
+| Measurement | Previous build | Updated build |
+| --- | ---: | ---: |
+| Startup to ready, local file | 46.4 s | 24.4 s |
+| GPU textures at ready | 800 | 269 |
+| Decoded audio at ready | 383 MiB | 193 MiB |
+| Neighborhood GPU frame, median | 4.14 ms | 1.35 ms |
+| White Aqueduct GPU frame, median | 9.39 ms | 6.67 ms |
+| Endless Market GPU frame, median | 12.19 ms | 6.25 ms |
+
+In a separate two-creature White Aqueduct CPU profile, the 95th-percentile simulation update fell from 13.7 to 2.4 ms after indexing floor contacts; rendering remained a separate cost.
+
+These are scene-specific measurements on this machine with the same resolution and view, rather than a guaranteed frame rate. Network transfer of the approximately 100 MB standalone, cold shader compilation, new-world preparation, hardware and quality settings still affect loading and frame times. The changes improve the existing embedded materials and rendering; they do not claim new 8K source textures or parity with Unreal Engine.

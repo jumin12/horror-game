@@ -4,6 +4,22 @@ A first-person dreamcore horror game with 27 fixed dimension maps: a deserted ne
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Connected wings and distinct map layouts
+
+The 27 fixed maps retain their enormous footprints, objective itineraries, six districts and 5–10 randomized POIs. Their secondary destinations now have connected, nonrectangular wing plans: horseshoe courts, offset parlours, cloisters, branching concourses, crescent galleries and split landings. Large supported sites reserve compounds up to 82 m wide; abyss galleries use narrower fitted variants. Rounded wall outlines and roof cutouts follow the same plan, with real open-air courts, backed trim, suspended practical fittings and joined collision geometry. Existing monumental architecture and signature chambers remain.
+
+Doorway clearance checks both sides against actual supporting floor and existing structures. A blocked or unsupported exterior edge stays a wall. Room centres, connecting lanes and exits are protected from later furniture or wall-mounted mechanisms. Map layout version 2 archives old coordinate-dependent object state and surveys while keeping campaign progress and notebook records.
+
+## Camera cleanup, grounded motion and denser settings
+
+The camcorder no longer applies a fixed grey scanline raster or an alternating row displacement. Moving grain, chroma wear and brief tape faults remain. Natural floor finishes now blend three translated photographic samples with shared colour, normal and roughness weights; explicit texture gradients prevent blend-cell seams. Broad stationary wear breaks up large repeats. Tile, plank and marble patterns retain their measured alignment. Floor triangulation includes the exact district boundaries, removing diagonal material slivers without adding overlapping surfaces.
+
+Each district gains a second distinct working instrument and further unused catalog furnishings. Small tabletop instruments are fitted onto available, uniquely claimed desks or work surfaces using real geometry support. The entire setting has its combined physical weight. Placement checks the full footprint, clear approaches, existing walls and reserved routes. The one-of-each-prop-type policy remains active. These use the existing detailed models, photographic maps, collision handling and positional recordings.
+
+Humanoid movement now uses two-bone inverse kinematics and world-space stance targets, with a bounded pelvis reach adjustment, toe-off, swing lift and smooth upper-body attack lean. Ankles stay attached to their shins. Normal anatomical skin retains its skin-photograph underlayer, while bark, wax and shadow identities keep their distinct surfaces. Skin and face roughness vary with the material. Existing creature models and behaviors remain; this pass does not replace the entire cast with new models.
+
+Object registration now builds a cooperative local solid lookup once per batch instead of repeatedly scanning every map collider for each item. Collision indexes are warmed in small steps before registration. During play, background preparation uses smaller bounded slices based on measured spare frame time, while retaining a minimum allocation so navigation and incoming areas keep progressing. Animation reuses identity-motion profiles and categorized joint lists, avoids repeated temporary pose-quaternion allocations and keeps the new contact solver's scratch vectors outside its frame loop. Added furnishings use shared model geometry and maps, existing visibility handling and cooperative preparation. The archive remains one offline-capable HTML file below 100 MiB.
+
 ## HDR lighting, flashlight optics and atmosphere
 
 All 27 dimensions retain their individual daylit, fluorescent, tungsten, coloured and blackout lighting profiles. Indoor reflections now use filtered HDR probes built from nearby walls, floor finishes and practical fittings. The existing live water reflections remain; selected polished floors gain depth-tested local screen-space reflections, including moving scene detail. Off-screen detail falls back to the filtered environment. These are raster techniques, not ray tracing.

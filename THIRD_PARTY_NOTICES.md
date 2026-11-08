@@ -283,3 +283,7 @@ Powered by [Poly Haven](https://polyhaven.com/). The following photographic text
 | [weathered_plank_siding](https://polyhaven.com/a/weathered_plank_siding) | Dimitrios Savva |
 
 The shared manufactured-finish data maps, physical UV projection, material integration and colour processing changes are original code for this game. The baked prop models, their existing source maps, creature/eye maps, prior generated discovery textures, and all audio assets retain their previous provenance above.
+
+### Lighting algorithm reference
+
+The original bounded blocker-search shadow filter was informed by NVIDIA's [Integrating Realistic Soft Shadows into Your Game Engine](https://developer.download.nvidia.com/assets/gamedev/docs/PCSS_Integration.pdf). The game uses its own small fixed kernel and bounded approximation, rather than the paper's full implementation. HDR probe, selective floor reflection, beam integration and foliage shading code are original additions; this lighting pass adds no external media assets.

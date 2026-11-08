@@ -4,6 +4,20 @@ A first-person dreamcore horror game with 27 fixed dimension maps: a deserted ne
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## HDR lighting, flashlight optics and atmosphere
+
+All 27 dimensions retain their individual daylit, fluorescent, tungsten, coloured and blackout lighting profiles. Indoor reflections now use filtered HDR probes built from nearby walls, floor finishes and practical fittings. The existing live water reflections remain; selected polished floors gain depth-tested local screen-space reflections, including moving scene detail. Off-screen detail falls back to the filtered environment. These are raster techniques, not ray tracing.
+
+The flashlight now shares one reflector profile between its linear light cookie, airborne dust and depth-bounded volumetric beam: a defined hotspot, softer spill and a fully feathered edge with inverse-square distance attenuation. Walls and the real shadow map occlude the beam, including through open doorways. Shadow filtering keeps nearby contact edges tighter and grows a bounded penumbra with blocker separation. Lower bias reduces detached shadows; edge fading avoids a hard shadow-map boundary.
+
+World-specific air density and highlight bloom preserve bright fittings and rich dark surfaces without a universal fog wash. Floating dust follows the colour and output of nearby working lights, including flicker and extinction. Extinguished nearby fittings also reduce indirect reflection brightness. Curved foliage gains filtered venation, varied wax roughness and restrained thin-surface bounce. Camcorder chroma, AgX colour, VHS grain, night vision and the photographic PBR maps remain active; reduced base blur preserves more texture detail.
+
+Reflection traces run at half resolution on Balanced/High and three-quarter resolution on Ultra, with depth-aware upsampling, roughness filtering, 16/22/28 bounded steps and a visible-floor mask capped at 32/32/48 draws. A stationary camera reuses the mask while reflections continue tracing the current scene. Probes bake once and share the existing cube-map format to avoid extra material shader families. Low quality retains environment and existing water reflections. All model, photographic material and audio payloads are unchanged; the game remains one offline-capable HTML file under 100 MiB.
+
+Validation for this pass: 27 worlds rendered from two views, 80 browser regression checks and targeted HDR reflection readbacks passed without JavaScript or WebGL errors. Four further intro/movement runs, wet-surface views, night-vision restoration and automatic capture recovery passed. The three prewarmed arrival-door input handlers took 0.5-1.6 ms in the regression run.
+
+Two 180-frame crowded-scene samples with eight prewarmed animated creatures, walking, turning and full camera effects averaged 17.62 and 16.66 ms per frame (about 57 and 60 FPS). Their 95th percentiles were 33.3 and 16.8 ms; both peaked at 33.4 ms. These used Balanced quality, a fixed 1280 x 960 buffer and disabled adaptive resolution on the development machine. They are bounded test scenes, not a universal frame-rate guarantee. The same scene textures, model geometry, shadow maps and lighting remain active.
+
 ## Photographic PBR and richer dark colour
 
 Sixteen CC0 photographic surface sets from Poly Haven now cover plaster, concrete, tile, furniture veneer, planks, carpet, fabric, leather, asphalt, brick, roofing, grass, pavement, marble, terrazzo and siding. Matching OpenGL normal maps and linear roughness maps remain active instead of being replaced by colour-derived bump maps. The new photographs are 1K tiles used at their measured physical sizes; they are not 8K scans. Existing acoustic panel photographs, unique organic/eye maps, generated discovery textures and UV-authored prop maps are preserved.

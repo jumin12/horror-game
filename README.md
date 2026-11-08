@@ -4,6 +4,14 @@ A first-person dreamcore horror game with 27 fixed dimension maps: a deserted ne
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Authored exploration routes
+
+Each of the 27 massive fixed maps now has its own circulation plan: crescent streets, braided inspections, radial chambers, figure-eight galleries, branching naves and connected return loops. Objectives occupy different, widely separated sites. Connections cut real framed openings through walls and railings; the matching collision geometry retains the opening. Conservatory supports shift clear of walkways with attached load-transfer braces.
+
+Suitable compounds have fitted mezzanine loops with two stair flights, guarded outlooks, continuous floors and supporting columns. Selected puzzle stations occupy the upper bays. The pass adds 23 mezzanine loops across 13 worlds, and 16 worlds place an objective on another floor. The original descending apartment, bath and atrium networks remain. Completing a field seal releases its matching district gate. Alternate entrances stay available where present; a single-entry side wing becomes an optional unlocked area. The solo and co-op interlocks follow their own progress. Q includes the elevation of the next objective.
+
+Layout version 3 archives earlier coordinate-dependent object states and notebook surveys while preserving earned campaign keys and recorded pages. Everyone in co-op must refresh to use the new compatible map build.
+
 ## Physical puzzles
 
 All 27 worlds have separate solo and co-op progression. Solo expeditions combine **54 field mechanisms** with **27 distinct centerpieces**: pressure transfers, coupled gears, shutter and reflection patterns, signal timing, counterweights, routing, echo sequences, thermal mixing, siphons, film gates and carriage brakes. A source lever stays latched; use **E** on fitted contacts and test at the other console. Moving carriages, chimes, shutter leaves, reservoirs and balance beams show the mechanism's state. The notebook keeps clues and readings; the machinery operates in the world.

@@ -56,3 +56,5 @@ Development caches, credentials, recorded test footage and source asset packs ar
 The same static `index.html` supports four-player co-op on GitHub Pages or Render. No Node game service or database is required. Room discovery uses public EMQX/HiveMQ secure WebSockets and WebRTC STUN; gameplay goes directly to the host. Keep outbound WebSockets and WebRTC enabled. No API key belongs in this public file. Restrictive networks may need a TURN service, which this release does not configure. The host tab must stay open.
 
 The paired-puzzle release uses the same static hosting configuration. No new environment variables or Render service are needed. Refresh the game on every player’s device after updating: the new puzzle protocol only lists compatible recordings.
+
+The exploration-map release uses the same static hosting settings. Refresh each player’s game for the compatible map protocol.

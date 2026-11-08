@@ -22,6 +22,48 @@ This pass covers 298 district courts, 1,497 fitted wall bays and 72 supported ro
 
 The maps retain their permanent footprints, six districts, themed jobs and independent 5–10 randomized POIs. The new architecture uses shared instance batches and cooperative preparation. Existing models, texture images and recordings retain their original embedded bytes.
 
+## Physical puzzles in every dimension
+
+All 81 main-job stations now have controls you can operate directly in the world: point at a knob, contact, switch or numbered button and press **E**. Needles, valve leaves, lamps, reels, cards, weights and other fitted parts follow their saved settings. Physical contacts and the notebook use the same timing phase. Delivery trays accept carried dockets directly, and optical stations take actual camcorder photographs. The notebook remains an alternative way to operate a nearby instrument.
+
+Every dimension now ends with its own persistent centerpiece apparatus. The first two preparation stages retain their varied existing instrument mechanics; the final stage uses the world's new rule set and clue. The apparatuses include interlocked operating sequences, coupled gears and prisms, adjacent card sorting, water transfer, routed circuits, balance and airflow problems, a live rising-float window, and patterns that include silence. Each of the 27 centerpieces has its own themed controls, clue and completion condition.
+
+| Dimension | Centerpiece |
+| --- | --- |
+| Domestic void | Recall a missing lift landing with its carriage brake set |
+| Indoor suburb | Route weatherless letters to their matching destinations |
+| Terraced village | Redistribute the lake's tide across three sluices |
+| Amber baths | Purge, fuel, ignite and vent a submerged furnace |
+| Tube warren | Join four rotating duct elbows into one continuous path |
+| White aqueduct | Transfer water between two vessels to prime a siphon |
+| Glass estuary | Align three coupled prisms |
+| Apartment canyon | Route an exchange without a self-connected line |
+| Endless market | Balance an impossible receipt with movable weights |
+| Indoor winter | Share a limited heater budget across neighboring chambers |
+| Roller rink | Find a tape frame at the correct speed and direction |
+| Carpet river | Divert the river with opposing sluice leaves |
+| Pastel atrium | Mix the missing color from three light wells |
+| Sunken galleria | Strike a closing interval on tuned pipes |
+| Glass conservatory | Set shade, irrigation and ventilation interlocks |
+| Sleeper concourse | Set and lock the railway turnouts before dispatch |
+| Flooded archive | Sort accession sheets using adjacent exchanges |
+| Tide hotel | Empty coupled rain chambers |
+| Planetarium basement | Align two coupled orbital gears for a false eclipse |
+| Laundry | Complete a warm wash, drain and dry-spin sequence |
+| Picturehouse | Reverse film strips to join their alternating grain |
+| Telephone exchange | Return a cadence containing tones and silence |
+| Freight cathedral | Balance trolley position and weighted moment |
+| Mirror office | Restore the inverse pattern across paired vanes |
+| Storm reservoir | Catch the float during its rising brass-marked band |
+| Clock library | Set and stop the escapement before latching the missing minute |
+| Salt mine | Reverse fans to satisfy the two shaft airflow totals |
+
+The nearby calibration sheets give impersonal clues and are filed by world. Numbered caps match the apparatus plate; a brass **R** button returns an unfinished centerpiece to its starting stops. Moving assemblies have physical supports and share static geometry where possible. Mechanisms use existing positional ElevenLabs recordings, with different pitches for pipe tones and cadence pulses. Operating a loud machine can alert nearby listeners. The key stays sealed until all three local stages are complete; recovering it then releases the return lock.
+
+Partial apparatus settings survive leaving and rebuilding a world, browser saves and reloading. Already completed stations stay complete, and revised final-stage sheets use their own archive IDs so they do not overwrite older recovered clues.
+
+The puzzle audit solves all 27 centerpieces with actual E input, checks the three stations in each world, rejects early completion, restores partial state, verifies key release and confirms the return lock opens after key collection. Browser reload, notebook controls and occlusion by solid obstacles also pass. All 189 objective and doorway approaches remain reachable after the larger apparatus fittings are installed. The 66-check browser regression suite and four further movement bursts with capture/recovery pass without JavaScript or WebGL errors.
+
 ## Play
 
 Open the link and let the preparation bar reach 100%, then select **Enter the recording**. A desktop browser with WebGL2 and hardware acceleration works best. The full game, models, textures and sounds are embedded in `index.html`; it also runs offline when downloaded. The standalone file is approximately 100 MiB, so the first visit downloads a large file.
@@ -59,7 +101,7 @@ Supplies are scarce: guaranteed entrance batteries and tape players are removed.
 
 The opening walk/fall is automatic and lands outside the locked mansion gate. Older saves trapped within its fence are moved to the safe approach. After landing, use WASD and mouse to explore. Ordinary neighborhood houses require no key: press **E** to open or close their front door, then walk through its live view. Lots without an unused destination remain empty, including in repaired older saves. The mansion gate remains chained. Each dimension has an authored, three-stage job tied to its setting: dispatch a train, restore an aqueduct, screen a lost film, reconnect an exchange, or complete another world-specific task. Notes explain controls and give clues. Complete the job to release its sealed brass key, then open the return door and bring the key home. Tasks and receiving stations are distributed across the world, sometimes on another connected floor. **Q** gives the next task's distance, compass bearing, elevation and whether to take stairs up or down.
 
-The campaign assigns at most **one house to each of 27 architectural families**. Once a family is entered, neither another house nor a hidden passage can offer it again. Its authored job program is also retired: there is no reroll after failure. Hidden passages draw from the same unused roster and may therefore consume a house's destination. Completed outer houses collapse into a glowing atom and leave an empty lot. This is a finite campaign of 27 distinct world/job families with procedural layouts and settings, rather than unlimited nonrepeating authored puzzle mechanics. New campaigns generate different seeds. Known visits from older saves migrate into the retirement ledger. A large mansion occupies the center behind an iron perimeter with one chained gate.
+The campaign assigns at most **one house to each of 27 architectural families**. Once a family is entered, neither another house nor a hidden passage can offer it again. Its authored job program is also retired: there is no reroll after failure. Hidden passages draw from the same unused roster and may therefore consume a house's destination. Completed outer houses collapse into a glowing atom and leave an empty lot. This is a finite campaign of 27 distinct world/job families with fixed maps and randomized points of interest, rather than unlimited nonrepeating authored puzzle mechanics. New campaigns generate different seeds. Known visits from older saves migrate into the retirement ledger. A large mansion occupies the center behind an iron perimeter with one chained gate.
 
 Creatures respond to sight, movement noise, light and radio lures. Quietly breaking line of sight gives you a chance to escape a search; a locker only protects you if the hunter did not see you enter. Charges have audible warnings, committed trajectories and recovery time. Creature voices and ground footsteps are positional, with walls muffling their sound. Hunters retain observations longer, commit more strongly at close range, and use bounded background path searches with safe local steering and recovery around obstructions. Breaking sight and using cover still matters.
 
@@ -128,7 +170,7 @@ Write on either facing page, add blank spreads, or tear out a written page and l
 | Shift / C / Space | Run / crouch / jump |
 | LMB / RMB | Hold to carry or drag / throw held object |
 | Wheel / Shift + wheel | Carrying reach / turn held object |
-| E | Doors, slide intakes, keys, supplies, objects and hiding lockers |
+| E | Fitted puzzle controls, doors, slide intakes, keys, supplies, objects and hiding lockers |
 | I / J / Tab / K / R | Notebook / notebook / notebook / key ring / replace battery |
 | N / L / Z | Night vision / flashlight / hold zoom |
 | Q | Next job, distance, compass direction, and elevation |

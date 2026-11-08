@@ -50,3 +50,7 @@ Development caches, credentials, recorded test footage and source asset packs ar
 - [Render Blueprint YAML specification](https://render.com/docs/blueprint-spec)
 - [GitHub Pages publishing sources](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 - [GitHub file-size limits](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)
+
+## Co-op hosting
+
+The same static `index.html` supports four-player co-op on GitHub Pages or Render. No Node game service or database is required. Room discovery uses public EMQX/HiveMQ secure WebSockets and WebRTC STUN; gameplay goes directly to the host. Keep outbound WebSockets and WebRTC enabled. No API key belongs in this public file. Restrictive networks may need a TURN service, which this release does not configure. The host tab must stay open.

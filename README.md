@@ -4,6 +4,16 @@ A first-person dreamcore horror game with 27 fixed dimension maps: a deserted ne
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Co-op and movement
+
+Choose **CO-OP · UP TO 4** on the menu. Enter a camera name, host a public recording, and use **Copy invite** from the pause menu’s co-op panel. Friends can join from the open recordings list or paste the invite. Uncheck “Show in open games” for an invite-only recording. Opening an invite link prepares the game and displays its Join button. The host can remove guests.
+
+Gameplay uses native WebRTC connections directly to the host’s browser. The host owns doors, puzzles, shared pickups, movable props and creature simulation. Players have visible full bodies and flashlights; the nearest companion receives a real-time flashlight shadow within the shared GPU budget; cameras, stamina, batteries and personal journals remain local. Crossing into a dimension travels the party together. A catch returns the party through the hole. The host’s pause menu pauses the shared simulation; guests see “HOST PAUSED.” Leaving restores a guest’s original solo recording; co-op notebooks are stored separately on that device.
+
+No game server or account is required from you. Co-op discovery and connection negotiation use the free public EMQX and HiveMQ MQTT brokers; STUN uses Google and Cloudflare. They are contacted when the co-op panel is opened. Public recording titles, camera names, room counts and temporary connection negotiation are public directory data. Game state and personal journal pages are not sent through the directory. No microphone or webcam is used. Public services can be unavailable; restrictive NATs or firewalls may prevent a direct connection because no paid TURN relay is configured. A failed connection leaves solo play available. The host must keep the game open; host migration is not implemented.
+
+**Shift** runs while held. **Double-tap Shift** starts auto-run; tap Shift again, press S, or crouch to stop. Stamina lasts about ten seconds of continuous running, then recovers after a short rest. Pause, hiding, slides, catches and battery changes cancel auto-run. The flashlight has a brighter, softer reflector with a high-precision beam profile. Its visible air cone is integrated in 3D between the lens and the scene depth, clipped by actual flashlight shadows and doorways, with drifting dust illuminated inside it. Door leaves stop before entering player capsules, and hole returns and house-departure endpoints are checked for a clear standing position. The full body follows the player through a jump.
+
 ## Connected wings and distinct map layouts
 
 The 27 fixed maps retain their enormous footprints, objective itineraries, six districts and 5–10 randomized POIs. Their secondary destinations now have connected, nonrectangular wing plans: horseshoe courts, offset parlours, cloisters, branching concourses, crescent galleries and split landings. Large supported sites reserve compounds up to 82 m wide; abyss galleries use narrower fitted variants. Rounded wall outlines and roof cutouts follow the same plan, with real open-air courts, backed trim, suspended practical fittings and joined collision geometry. Existing monumental architecture and signature chambers remain.

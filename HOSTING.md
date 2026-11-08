@@ -1,4 +1,4 @@
-# Host Horror Game
+# Host The Last Address
 
 Repository: https://github.com/jumin12/horror-game
 

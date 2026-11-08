@@ -1,8 +1,12 @@
-# Horror Game
+# The Last Address
 
-A first-person dreamcore horror game with 27 fixed dimension maps: a deserted neighborhood, doors into enormous dimensions, 27 distinct world jobs, one released key per world, hunting creatures, hiding places, and a 1990s VHS camcorder.
+A first-person found-footage horror game with 27 fixed dimension maps: a deserted neighborhood, doors into enormous dimensions, 27 distinct world jobs, one released key per world, hunting creatures, hiding places, and a 1990s VHS camcorder.
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
+
+## Controls and menus
+
+The title, pause menu and camcorder prompts use a restrained horror interface. Controls has separate movement, interaction, survival and journal pages. Settings offers invert look, hold/toggle crouch, hold/toggle sprint or double-tap auto-run, reduced camera effects and optional contextual hints. Settings also contains the asset credits and licenses. Existing saved recordings, journals and video clips remain compatible. New recording and replay-opening actions ask before replacing or leaving the current campaign.
 
 ## Authored exploration routes
 
@@ -30,7 +34,7 @@ Validation covers all 54 solo field rules, 81 paired stages, 27 original centerp
 
 ## Co-op and movement
 
-Choose **CO-OP · UP TO 4** on the menu. Enter a camera name, host a public recording, and use **Copy invite** from the pause menu’s co-op panel. Friends can join from the open recordings list or paste the invite. Uncheck “Show in open games” for an invite-only recording. Opening an invite link prepares the game and displays its Join button. The host can remove guests.
+Choose **Co-op** on the menu. Enter a camera name, host a public recording, and use **Copy invite** from the pause menu’s co-op panel. Friends can join from the open recordings list or paste the invite. Uncheck “Show in open games” for an invite-only recording. Opening an invite link prepares the game and displays its Join button. The host can remove guests.
 
 Gameplay uses native WebRTC connections directly to the host’s browser. The host owns doors, puzzles, shared pickups, movable props and creature simulation. Players have visible full bodies and flashlights; the nearest companion receives a real-time flashlight shadow within the shared GPU budget; cameras, stamina, batteries and personal journals remain local. Crossing into a dimension travels the party together. A catch returns the party through the hole. The host’s pause menu pauses the shared simulation; guests see “HOST PAUSED.” Leaving restores a guest’s original solo recording; co-op notebooks are stored separately on that device.
 

@@ -4,6 +4,18 @@ A first-person dreamcore horror game with 27 fixed dimension maps: a deserted ne
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Photographic PBR and richer dark colour
+
+Sixteen CC0 photographic surface sets from Poly Haven now cover plaster, concrete, tile, furniture veneer, planks, carpet, fabric, leather, asphalt, brick, roofing, grass, pavement, marble, terrazzo and siding. Matching OpenGL normal maps and linear roughness maps remain active instead of being replaced by colour-derived bump maps. The new photographs are 1K tiles used at their measured physical sizes; they are not 8K scans. Existing acoustic panel photographs, unique organic/eye maps, generated discovery textures and UV-authored prop maps are preserved.
+
+Paint, plastic, rubber, paper and metal gain shared fine normal and roughness data. Wood retains veneer rather than floorboard mapping, fabric retains its authored dye colour, and leather uses its matching relief and roughness with the prop's own base colour. World-anchored architectural UVs keep adjoining pieces at a consistent scale. Tileable maps use mipmaps and anisotropic filtering; duplicate aliases share decoded images and GPU textures.
+
+The camcorder's colour and low-resolution VHS chroma now use the same AgX tone curve and sRGB conversion. Neutral wear replaces the universal green dirt cast; restrained midtone vibrance keeps colours distinct without brightening the black floor. The original VHS grain, motion, night vision, local light colours, shadows and bloom remain. Indirect lighting is slightly lower while reflection response is stronger, retaining both daylit and blackout areas.
+
+Validation: all 27 maps were rendered from two views and audited for colour/data-map colour spaces and complete PBR bindings. The 76-check browser regression suite passes, including prepared door adoption, physical interactions, night vision, all 56 animated rigs, environment effects and capture recovery. Source geometry, all 346 recordings and 34 protected texture packs remain byte-identical; the standalone build remains below 100 MiB.
+
+[Powered by Poly Haven — sources and creators](THIRD_PARTY_NOTICES.md#photographic-surface-upgrade).
+
 ## Fixed dimension maps and randomized POIs
 
 Each of the 27 dimensions has exactly one map, at least 480 × 660 metres, with its existing regions and world-specific escape job. Only its featured points of interest are randomized: **5–10 per dimension**, chosen and placed independently of the architecture. The POIs are themed interactive exhibits with distinct mechanisms and positional sound. Placement uses supported floors, clear approaches and existing rooms or circulation routes, spreading discoveries across the regions.

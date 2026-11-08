@@ -10,7 +10,17 @@ Each of the 27 dimensions has exactly one map, at least 480 × 660 metres, with 
 
 POIs stay put through door previews, entering, saving and rebuilding a destination. Starting a new campaign changes their count, selection and positions while keeping the map identical. The journal survey labels a POI only after it is seen nearby. Previously saved surveys, annotations, photographs and written pages are preserved as earlier-layout records; old physical positions and puzzle states are archived so they cannot restore objects into the revised walls. An unfinished older expedition resumes at the entrance of its fixed map. Supplies, returned keys and completed-world history remain available.
 
-The final map audit compares all 27 dimensions across two independent POI rolls: architecture, floors, fixed furnishings, regional mechanisms and main landmark positions match exactly. All 397 sampled POIs have supported footprints and reachable approaches, with 5–10 distinct mechanisms in every roll. A separate audit checks 189 key, return-door, puzzle and hidden-door approaches, including stair-supported elevated objectives. Elevated jobs require a walkable stair and a flat landing. The 64-check browser suite covers the shared portal world and POI state, physical interactions, sound, creature behavior and recovery; four further input bursts and save/reload/New Game checks also pass. All embedded model, texture and audio bytes remain unchanged.
+The original fixed-map release audit compared all 27 dimensions across two independent POI rolls: architecture, floors, fixed furnishings, regional mechanisms and main landmark positions match exactly. All 397 sampled POIs have supported footprints and reachable approaches, with 5–10 distinct mechanisms in every roll. A separate audit checks 189 key, return-door, puzzle and hidden-door approaches, including stair-supported elevated objectives. Elevated jobs require a walkable stair and a flat landing. The 64-check browser suite covers the shared portal world and POI state, physical interactions, sound, creature behavior and recovery; four further input bursts and save/reload/New Game checks also pass. All embedded model, texture and audio bytes remain unchanged.
+
+## Architectural polish across all 27 maps
+
+Every fixed dimension now has its own architectural finish system: oak stair-house joinery, porch canopies, cut-stone loggias, amber thermal vaults, fluted porcelain aqueducts, riveted reservoir galleries, concrete apartment sections, refrigerated retail bays, frozen clerestories, acoustic rink panels, rose sluice galleries, coral light wells, bronze shopping arcades, propagation-house trellises, platform trusses, brass-bound record cabinets, recessed rain windows, radial projection baffles, enamel extraction galleries, cinema prosceniums, ceramic carrier frames, freight naves, bevelled office sections, pressure-wall spillways, carved clock galleries and stratified mineral walls.
+
+The existing district courts gain joined cornices, layered reveals, material-specific wall bays and supported vaulted, coffered, cassette, truss or pergola ceiling sections. Fitted practical lamps illuminate these details through the existing world-lighting system. Covered courts suspend strip lights from their real ceilings; open courts carry them on pier-supported gantries. Tile joints, parquet rhythms, diagonal stone layouts, borders and route inlays shade the existing walking floor, with antialiasing and material roughness variation; there are no extra overlapping floor planes. Natural lawns and snow keep their existing surfaces. Up to three themed landmarks join each world's main routes wherever full-volume and floor-support checks find enough space; their piers have real collision and leave the center open.
+
+This pass covers 298 district courts, 1,497 fitted wall bays and 72 supported route landmarks across all 27 worlds. Navigation checks cover 189 key, return-door, job and hidden-door approaches; actual movement is also checked through landmark structures in seven worlds. The browser regression suite now has 65 checks, with four further input bursts and capture/recovery checks.
+
+The maps retain their permanent footprints, six districts, themed jobs and independent 5–10 randomized POIs. The new architecture uses shared instance batches and cooperative preparation. Existing models, texture images and recordings retain their original embedded bytes.
 
 ## Play
 
@@ -141,7 +151,7 @@ Movable furniture can block the player or brace a doorway, but hunters knock it 
 
 ## Dimension families
 
-The campaign contains **27 architectural families and 27 distinct themed job programs**. Each family is available once per campaign, including hidden descendants. Seeds vary geometry, size and device settings; some control mechanics are shared across different jobs.
+The campaign contains **27 architectural families and 27 distinct themed job programs**. Each family is available once per campaign, including hidden descendants. Each family has one fixed geometry and size; new campaigns vary its featured POIs and device settings. Some control mechanics are shared across different jobs.
 
 | Dimension | Themed job |
 | --- | --- |

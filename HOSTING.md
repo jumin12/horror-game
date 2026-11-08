@@ -58,3 +58,5 @@ The same static `index.html` supports four-player co-op on GitHub Pages or Rende
 The paired-puzzle release uses the same static hosting configuration. No new environment variables or Render service are needed. Refresh the game on every player’s device after updating: the new puzzle protocol only lists compatible recordings.
 
 The exploration-map release uses the same static hosting settings. Refresh each player’s game for the compatible map protocol.
+
+The physical-preparation update uses the same static configuration. All co-op players must refresh for `coop-fieldwork-4`; no additional Render service or environment variables are required.

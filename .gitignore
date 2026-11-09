@@ -11,3 +11,8 @@
 !/deploy/
 /deploy/*
 !/deploy/build.mjs
+!/.github/
+/.github/*
+!/.github/workflows/
+/.github/workflows/*
+!/.github/workflows/pages.yml

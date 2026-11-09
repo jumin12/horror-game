@@ -24,7 +24,7 @@ GitHub Pages play address: https://jumin12.github.io/horror-game/
 
 There is no Start Command, port, database or API secret. The models, textures and ElevenLabs recordings are embedded in the game. The build command only copies the ready-to-play file and attribution into `public`; it does not regenerate assets. Choose a Static Site for this configuration.
 
-Render serves the result over HTTPS. The first visit downloads the approximately 93 MiB game; allow the initial preparation to finish. Click Enter the recording to enable sound and mouse capture.
+Render serves the result over HTTPS. The first visit downloads the approximately 100 MiB game; allow the initial preparation to finish. Click Enter the recording to enable sound and mouse capture.
 
 ## Render: Blueprint alternative
 
@@ -36,7 +36,7 @@ The Blueprint has the same build/publish settings and skips dependency installat
 
 ## GitHub Pages
 
-In the repository, open **Settings → Pages**. Under Build and deployment choose **Deploy from a branch**, branch **main**, folder **/(root)**, then Save. The root `.nojekyll` file disables Jekyll processing. Once deployment succeeds, play at https://jumin12.github.io/horror-game/.
+The repository uses **Settings → Pages → Source → GitHub Actions**. Pushing to `main` runs `.github/workflows/pages.yml`, which copies the standalone game and attribution into `public`, uploads that directory, and publishes it. The activation step allows 30 minutes for Pages file synchronization; the large standalone file exceeded the default ten-minute window. The job allows 35 minutes overall. Once activation succeeds, play at https://jumin12.github.io/horror-game/.
 
 ## Updates and saves
 
@@ -59,4 +59,4 @@ The paired-puzzle release uses the same static hosting configuration. No new env
 
 The exploration-map release uses the same static hosting settings. Refresh each player’s game for the compatible map protocol.
 
-The physical-preparation update uses the same static configuration. All co-op players must refresh for `coop-fieldwork-4`; no additional Render service or environment variables are required.
+The expedition-equipment update uses the same Render static configuration. All co-op players must refresh for `coop-expedition-5`; no additional Render service or environment variables are required.

@@ -16,3 +16,9 @@
 !/.github/workflows/
 /.github/workflows/*
 !/.github/workflows/pages.yml
+!/atlas/
+/atlas/*
+!/atlas/index.html
+!/atlas/*.svg
+!/atlas/audit.md
+!/atlas/validation.json

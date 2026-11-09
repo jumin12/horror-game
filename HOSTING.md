@@ -59,4 +59,4 @@ The paired-puzzle release uses the same static hosting configuration. No new env
 
 The exploration-map release uses the same static hosting settings. Refresh each player’s game for the compatible map protocol.
 
-The expedition-equipment update uses the same Render static configuration. All co-op players must refresh for `coop-expedition-5`; no additional Render service or environment variables are required.
+The equipment and layout update uses the same Render static configuration. All co-op players must refresh for `coop-handling-6`; no additional Render service or environment variables are required.

@@ -1,4 +1,4 @@
-import {copyFile,mkdir,stat,open} from 'node:fs/promises';
+import {copyFile,mkdir,stat,open,readdir} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
@@ -15,4 +15,7 @@ const output=path.join(root,'public');
 await mkdir(output,{recursive:true});
 await copyFile(source,path.join(output,'index.html'));
 await copyFile(path.join(root,'THIRD_PARTY_NOTICES.md'),path.join(output,'third-party-notices.txt'));
+const atlas=path.join(root,'atlas');
+await mkdir(path.join(output,'atlas'),{recursive:true});
+for(const name of await readdir(atlas))if(/^(index\.html|audit\.md|validation\.json|\d{2}-[a-z-]+\.svg)$/.test(name))await copyFile(path.join(atlas,name),path.join(output,'atlas',name));
 console.log(`Published The Last Address: ${(info.size/1024/1024).toFixed(2)} MiB in public/`);

@@ -4,6 +4,29 @@ A first-person found-footage horror game with 27 fixed dimension maps: a deserte
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Dense dimensions and live doorways
+
+Opaque architectural castings now share shape/material batches across the fixed map. Conservative spatial trees retain every visible instance separately for the camera and each shadow view; a padded selection is reused only while it is proven to contain the new frustum. The source geometry, surface maps, light counts, shadow resolutions and render buffers remain intact. Small cylindrical fittings retain their full source detail at distance. The sampled domestic map falls from 1,392 persistent architecture batches to 92.
+
+Repeated rigid fittings also share native instance submissions while their original objects remain available for grabbing, picking, animation and collision. Changed materials or incompatible transforms fall back to their original draw. Instance buffers grow with their actual selection rather than allocating an entire world for each camera and light. Renderer-owned non-sampler light arrays reuse their upload within a scene submission; texture allocation and per-object uniforms keep the normal renderer path.
+
+Crossing a doorway adopts its already prepared directional shadow along with the same destination, fixtures and discoveries. Nearby door collision queries use a spatial lookup while reading current swinging-leaf transforms. Distant unreachable interactions no longer perform line-of-sight checks, entry lighting avoids a full-world sort, and exposed floor edges/long railing runs yield in smaller construction steps.
+
+Existing landmark courts have layered window seals, mullion trim, slim metal rails and clearer physical glazing. Local atmosphere transitions smoothly between enclosed courts, damp baths and open halls in both the real world and the live doorway. The 27 floorplans, puzzle graphs and all embedded models, PBR archives and ElevenLabs recordings are preserved.
+
+The release passed the 27-map collision/navigation audit (451 links, 520 junction connections, 2,634 interaction approaches and 11,576 stair samples), 80 gameplay checks, 19 native WebRTC co-op checks and 36 raw HDR rendering comparisons. The rendering checks allow only floating-point edge differences; they do not hide missing geometry or shadows.
+
+A matched native-frame test used the RTX 4080 through ANGLE D3D11, a fixed **1440 × 1080 Ultra** buffer and disabled adaptive resolution. It opened the same domestic-world door and walked through it:
+
+| View | Before FPS | Updated FPS |
+| --- | ---: | ---: |
+| Closed neighborhood | 60.0 | 60.0 |
+| Opening/live doorway | 27.5 | 38.5 |
+| Walking through | 25.2 | 37.4 |
+| Dense interior | 27.8 | 44.0 |
+
+The dense-interior median CPU frame fell from 34.1 to 21.0 ms; the sampled crossing CPU maximum fell from 103.5 to 52.5 ms. The exact prepared world and its directional shadow transferred without new visible shader programs or JavaScript/WebGL errors. **The locked 60 FPS target is not yet met in the demanding views.** This benchmark preserves the rendering settings and reports the remaining limit instead of masking it with a lower internal resolution.
+
 ## Authored map directions
 
 Layout revision 4 replaces the shared six-point circulation pattern with **27 authored plans**, each with 12–14 route nodes, multiple circuits and three composed landmark courts. The mine follows forked fault lines; the market has a broken shopping racetrack and stockroom dogleg; the conservatory branches through an enfilade of gardens; the picturehouse unwinds around a projection return. Existing huge footprints, 5–10 randomized POIs, 18 route discoveries, themed solo/co-op puzzles and world-owned creature rosters remain.

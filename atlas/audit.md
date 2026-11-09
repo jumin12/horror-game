@@ -16,7 +16,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The missing dining room; The landing with two hearths; The last upstairs window.
 - Spatial pacing: 18 checked junction connections; 13 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 6 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 8 POIs, 18 route compartments spanning 470 m, 4 physical preparation/discovery installations.
-- Task sites: separation 298–524 m; 98 checked approaches.
+- Task sites: separation 298–524 m; 134 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 2. Suburbs beneath the last ceiling
@@ -27,7 +27,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The clipped hedge square; The street beneath a living-room ceiling; The abandoned delivery turning.
 - Spatial pacing: 21 checked junction connections; 14 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 5 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 8 POIs, 18 route compartments spanning 706 m, 4 physical preparation/discovery installations.
-- Task sites: separation 329–571 m; 97 checked approaches.
+- Task sites: separation 329–571 m; 129 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 3. The village around the impossible lake
@@ -36,9 +36,9 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Vertical section: -180.00 to +3.15 m; 19 stairs, 1397 sampled tread positions and 2 added mezzanine loops.
 - Districts: The upper fruit terraces; Stone walks above the lake; The irrigation pools; The terraced seed archive; The glass lookout houses; The lower waterworks.
 - Landmark courts: The stone belvedere; The orchard cistern; The house above its own roof.
-- Spatial pacing: 19 checked junction connections; 14 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 3 initial court furniture placements before the world-wide uniqueness pass.
+- Spatial pacing: 19 checked junction connections; 14 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 4 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 9 POIs, 18 route compartments spanning 882 m, 4 physical preparation/discovery installations.
-- Task sites: separation 409–752 m; 98 checked approaches.
+- Task sites: separation 409–752 m; 131 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 4. The lower thermal baths
@@ -49,7 +49,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The dry changing court; The copper steam crown; The cold immersion gallery.
 - Spatial pacing: 18 checked junction connections; 13 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 6 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 6 wings, 6 POIs, 18 route compartments spanning 447 m, 4 physical preparation/discovery installations.
-- Task sites: separation 271–393 m; 96 checked approaches.
+- Task sites: separation 271–393 m; 130 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 5. The soft-play service tunnels
@@ -60,7 +60,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The blue intake mouth; The listening junction; The yellow return throat.
 - Spatial pacing: 21 checked junction connections; 14 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 2 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 7 POIs, 18 route compartments spanning 411 m, 4 physical preparation/discovery installations.
-- Task sites: separation 282–397 m; 99 checked approaches.
+- Task sites: separation 282–397 m; 132 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 6. The aqueduct without a surface
@@ -71,7 +71,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The drowned measuring arcade; The fluted pressure nave; The collecting basin.
 - Spatial pacing: 19 checked junction connections; 12 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 5 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 5 wings, 9 POIs, 18 route compartments spanning 474 m, 4 physical preparation/discovery installations.
-- Task sites: separation 144–530 m; 101 checked approaches.
+- Task sites: separation 144–530 m; 132 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 7. The reservoir of borrowed houses
@@ -80,9 +80,9 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Vertical section: 0.00 to +3.15 m; 2 stairs, 48 sampled tread positions and 1 added mezzanine loops.
 - Districts: Houses beside the current; The glass current courts; The overgrown reservoir edge; The pipe-return district; The glazed flood arcade; The cold receiving rooms.
 - Landmark courts: The house-shaped receiving tank; The transparent pressure orchard; The dry island under glass.
-- Spatial pacing: 19 checked junction connections; 12 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 2 initial court furniture placements before the world-wide uniqueness pass.
+- Spatial pacing: 19 checked junction connections; 12 authored route nodes; 4 macro circuits; 1 fitted compression/arcade passages; 3 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 11 wings, 7 POIs, 18 route compartments spanning 467 m, 4 physical preparation/discovery installations.
-- Task sites: separation 333–468 m; 96 checked approaches.
+- Task sites: separation 333–468 m; 127 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 8. The apartment section
@@ -93,7 +93,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The exposed breakfast room; The maintenance bridge; The window that faces inward.
 - Spatial pacing: 20 checked junction connections; 13 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 3 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 11 wings, 5 POIs, 18 route compartments spanning 513 m, 4 physical preparation/discovery installations.
-- Task sites: separation 307–558 m; 94 checked approaches.
+- Task sites: separation 307–558 m; 128 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 9. The store beyond closing
@@ -104,7 +104,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The checkout island; The cold-chain transfer bay; The produce court after closing.
 - Spatial pacing: 19 checked junction connections; 14 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 6 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 7 POIs, 18 route compartments spanning 443 m, 4 physical preparation/discovery installations.
-- Task sites: separation 294–507 m; 96 checked approaches.
+- Task sites: separation 294–507 m; 127 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 10. Winter in the assembly hall
@@ -115,7 +115,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The buried bandstand; The thawed lamp court; The snow inside the ticket hall.
 - Spatial pacing: 18 checked junction connections; 13 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 2 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 8 POIs, 18 route compartments spanning 504 m, 4 physical preparation/discovery installations.
-- Task sites: separation 320–393 m; 98 checked approaches.
+- Task sites: separation 320–393 m; 128 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 11. The last song at the rink
@@ -126,7 +126,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The empty band shell; The rental-shoe amphitheatre; The silent center circle.
 - Spatial pacing: 17 checked junction connections; 12 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 4 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 7 wings, 8 POIs, 18 route compartments spanning 608 m, 4 physical preparation/discovery installations.
-- Task sites: separation 338–497 m; 97 checked approaches.
+- Task sites: separation 338–497 m; 127 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 12. The river beneath the office lights
@@ -136,8 +136,8 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Districts: The carpet riverbank; The tiled river baths; The drowned filing wing; The pink waiting rooms; The river fern courts; The lower sluice plant.
 - Landmark courts: The rose crossing; The flooded waiting room; The office on the far bank.
 - Spatial pacing: 19 checked junction connections; 12 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 3 initial court furniture placements before the world-wide uniqueness pass.
-- Discoveries: 12 wings, 9 POIs, 18 route compartments spanning 429 m, 4 physical preparation/discovery installations.
-- Task sites: separation 261–383 m; 99 checked approaches.
+- Discoveries: 12 wings, 9 POIs, 18 route compartments spanning 437 m, 4 physical preparation/discovery installations.
+- Task sites: separation 261–383 m; 131 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 13. The well behind the pink corridor
@@ -148,7 +148,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The rose loggia; The cyan-column court; The well with an indoor horizon.
 - Spatial pacing: 18 checked junction connections; 13 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 1 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 7 POIs, 18 route compartments spanning 441 m, 4 physical preparation/discovery installations.
-- Task sites: separation 343–515 m; 97 checked approaches.
+- Task sites: separation 343–515 m; 132 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 14. The galleria after closing
@@ -157,9 +157,9 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Vertical section: 0.00 to +6.40 m; 7 stairs, 207 sampled tread positions and 2 added mezzanine loops.
 - Districts: The marble shopping nave; The shuttered retail courts; The display-window labyrinth; The food-court greenhouse; The service arcade; The dark stock corridors.
 - Landmark courts: The empty escalator court; The closing bell arcade; The inverted shop window.
-- Spatial pacing: 19 checked junction connections; 12 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 4 initial court furniture placements before the world-wide uniqueness pass.
+- Spatial pacing: 19 checked junction connections; 12 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 5 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 9 wings, 10 POIs, 18 route compartments spanning 532 m, 4 physical preparation/discovery installations.
-- Task sites: separation 354–544 m; 99 checked approaches.
+- Task sites: separation 354–544 m; 132 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 15. The glass conservatory
@@ -170,7 +170,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The abandoned palm arcade; The irrigation lantern; The seed chapel.
 - Spatial pacing: 18 checked junction connections; 13 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 4 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 11 wings, 10 POIs, 18 route compartments spanning 629 m, 4 physical preparation/discovery installations.
-- Task sites: separation 420–504 m; 100 checked approaches.
+- Task sites: separation 420–504 m; 133 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 16. The concourse for the last train
@@ -179,9 +179,9 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Vertical section: 0.00 to +3.15 m; 2 stairs, 48 sampled tread positions and 1 added mezzanine loops.
 - Districts: The arrival platform halls; The sleeper waiting suites; The narrow baggage passages; The outdoor room under glass; The under-platform plant; The dark departure gallery.
 - Landmark courts: The blank departure canopy; The clocks over the concourse; The platform beyond the wall.
-- Spatial pacing: 19 checked junction connections; 12 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 2 initial court furniture placements before the world-wide uniqueness pass.
+- Spatial pacing: 19 checked junction connections; 12 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 4 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 11 wings, 6 POIs, 18 route compartments spanning 527 m, 4 physical preparation/discovery installations.
-- Task sites: separation 273–500 m; 97 checked approaches.
+- Task sites: separation 273–500 m; 128 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 17. The flooded record hall
@@ -192,7 +192,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The paper-drying court; The submerged catalogue window; The pneumatic crossing.
 - Spatial pacing: 17 checked junction connections; 12 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 3 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 10 POIs, 18 route compartments spanning 675 m, 4 physical preparation/discovery installations.
-- Task sites: separation 348–498 m; 99 checked approaches.
+- Task sites: separation 348–498 m; 131 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 18. The hotel beneath the rain
@@ -203,7 +203,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The rain check-in court; The tide gauge room; The guest balcony facing the sea inside.
 - Spatial pacing: 19 checked junction connections; 14 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 4 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 11 wings, 6 POIs, 18 route compartments spanning 666 m, 4 physical preparation/discovery installations.
-- Task sites: separation 374–728 m; 97 checked approaches.
+- Task sites: separation 374–728 m; 132 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 19. The planetarium below the basement
@@ -213,8 +213,8 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Districts: The projection dome halls; The acoustic screening rooms; The telescope cooling plant; The dark stellar corridors; The astronomical records; The artificial-night garden.
 - Landmark courts: The starless projection port; The eclipsed central lantern; The plate-storage rotunda.
 - Spatial pacing: 21 checked junction connections; 12 authored route nodes; 5 macro circuits; 3 fitted compression/arcade passages; 4 initial court furniture placements before the world-wide uniqueness pass.
-- Discoveries: 10 wings, 9 POIs, 18 route compartments spanning 428 m, 4 physical preparation/discovery installations.
-- Task sites: separation 310–406 m; 97 checked approaches.
+- Discoveries: 10 wings, 9 POIs, 18 route compartments spanning 439 m, 4 physical preparation/discovery installations.
+- Task sites: separation 310–406 m; 129 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 20. The wash that never finished
@@ -225,7 +225,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The linen-transfer arcade; The unoccupied drying room; The boiler crown.
 - Spatial pacing: 19 checked junction connections; 14 authored route nodes; 3 macro circuits; 3 fitted compression/arcade passages; 5 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 8 POIs, 18 route compartments spanning 504 m, 4 physical preparation/discovery installations.
-- Task sites: separation 309–548 m; 99 checked approaches.
+- Task sites: separation 309–548 m; 132 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 21. The cinema without an audience
@@ -236,7 +236,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The missing audience foyer; The perforated screen court; The projection-light passage.
 - Spatial pacing: 19 checked junction connections; 12 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 3 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 8 POIs, 18 route compartments spanning 750 m, 4 physical preparation/discovery installations.
-- Task sites: separation 176–455 m; 99 checked approaches.
+- Task sites: separation 176–455 m; 129 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 22. The city of unanswered calls
@@ -247,7 +247,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The switch-frame courtyard; The silent carrier arch; The receiver test chamber.
 - Spatial pacing: 21 checked junction connections; 12 authored route nodes; 5 macro circuits; 3 fitted compression/arcade passages; 5 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 8 wings, 9 POIs, 18 route compartments spanning 565 m, 4 physical preparation/discovery installations.
-- Task sites: separation 265–573 m; 99 checked approaches.
+- Task sites: separation 265–573 m; 128 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 23. The freight beneath the cathedral
@@ -258,7 +258,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The empty receiving apse; The hanging-crane side chapel; The manifest crossing.
 - Spatial pacing: 19 checked junction connections; 12 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 5 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 7 POIs, 18 route compartments spanning 627 m, 4 physical preparation/discovery installations.
-- Task sites: separation 253–627 m; 96 checked approaches.
+- Task sites: separation 253–627 m; 128 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 24. The office on the wrong side
@@ -269,7 +269,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The unreflected meeting room; The displaced light grid; The desk behind the glass.
 - Spatial pacing: 20 checked junction connections; 13 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 5 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 10 POIs, 18 route compartments spanning 693 m, 4 physical preparation/discovery installations.
-- Task sites: separation 394–655 m; 101 checked approaches.
+- Task sites: separation 394–655 m; 132 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 25. The reservoir beneath the storm
@@ -280,7 +280,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The storm-watch shelter; The dam’s pressure crown; The overflow-window house.
 - Spatial pacing: 23 checked junction connections; 12 authored route nodes; 6 macro circuits; 3 fitted compression/arcade passages; 6 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 6 POIs, 18 route compartments spanning 856 m, 4 physical preparation/discovery installations.
-- Task sites: separation 393–619 m; 93 checked approaches.
+- Task sites: separation 393–619 m; 123 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 26. The library of removed hours
@@ -291,7 +291,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The pendulum reading court; The missing-minute lantern; The hour-index balcony.
 - Spatial pacing: 20 checked junction connections; 13 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 4 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 6 POIs, 18 route compartments spanning 570 m, 4 physical preparation/discovery installations.
-- Task sites: separation 365–592 m; 95 checked approaches.
+- Task sites: separation 365–592 m; 123 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 27. The salt beneath the sleeping city
@@ -302,5 +302,13 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The exposed salt fault; The abandoned survey crown; The brine-lit loading cave.
 - Spatial pacing: 20 checked junction connections; 13 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 5 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 12 wings, 6 POIs, 18 route compartments spanning 693 m, 4 physical preparation/discovery installations.
-- Task sites: separation 466–656 m; 97 checked approaches.
+- Task sites: separation 466–656 m; 129 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
+
+## Passage construction and interaction checks
+
+79 fitted passage scenes use 27 world-specific construction profiles. Physical headers and glazed canopies take part in collision and clearance. Curved colonnade spans bear on their columns; upper apartment balconies have continuous supports. Furniture placement uses complete model bounds, floor support, column clearance and checked standing approaches.
+
+3497 interaction approaches, 451 district links, 520 junction connections and 11576 tread samples pass the built-world audit.
+
+158 actual E-key actions switch the passage circuits off and back on, checking source, indicator and final actuator pose. An actual W-key traversal through a fitted passage passes in all 27 dimensions.

@@ -1,8 +1,10 @@
 {
   "maps": 27,
-  "targets": 2634,
+  "targets": 3497,
   "stairSamples": 11576,
   "routes": 451,
   "junctions": 520,
+  "routeLightActions": 158,
+  "passageWalks": 27,
   "errors": []
 }

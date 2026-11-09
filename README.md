@@ -4,6 +4,18 @@ A first-person found-footage horror game with 27 fixed dimension maps: a deserte
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Passage construction and map continuity
+
+The 27 enormous maps now have **79 fitted passage scenes**, using a different construction profile in every dimension: glazed shelters, copper arches, garden trellises, freight trusses, drying galleries, intake ducts, domestic porches and other local structures. Posts, footings, tied roof members, attached fittings and selected enclosed bays give the district routes more distinct pauses and reveals. Existing footprints, landmark courts, main puzzles, discoveries and creature rosters remain intact.
+
+Each fitted passage has a useful light circuit with a physical lever, rotary selector or plunger. **E** moves the control smoothly and changes its real local light, with positional relay audio and noise that creatures can hear. Circuit state survives saving and is shared in co-op, including the moving handle and lit indicator. This also repairs remote indicator and handle updates on existing worklights. Both co-op players should refresh for this release.
+
+Curved colonnade beams now bear on the actual column positions, and the upper apartment balconies have continuous supports. Passage headers and glazed roofs participate in collision and creature clearance. Furniture placement retries multiple composed positions using the complete model bounds, columns, supporting floor and a clear standing approach. Old saved prop offsets that would put an object through architecture or over a floor void return to a safe placement while retaining its use state.
+
+This pass clears the 27-map audit: **451 route links, 520 junction connections, 3,497 interaction approaches and 11,576 stair samples**. Actual input switches all 79 circuits off/on and walks a passage in every map. The 80-check gameplay regression, 21 native WebRTC co-op checks and 29 atlas UI checks also pass, without JavaScript or WebGL errors. The [measured atlas and audit](https://jumin12.github.io/horror-game/atlas/) now include the fitted furniture and lighting approaches. All embedded model, PBR and recording archives remain byte-identical.
+
+A fresh native-frame sample on the RTX 4080 at fixed **1440 × 1080 Ultra, adaptive resolution disabled**, measured 60.0 FPS in the closed estate, 56.7 at the live domestic doorway, 48.6 while crossing and 59.0 inside. The identical prepared world transfers with no new visible shader programs or browser errors. These are local sample results; demanding doorway crossings still fall below a locked 60 FPS.
+
 ## Dense dimensions and live doorways
 
 Opaque architectural castings now share shape/material batches across the fixed map. Conservative spatial trees retain every visible instance separately for the camera and each shadow view; a padded selection is reused only while it is proven to contain the new frustum. The source geometry, surface maps, light counts, shadow resolutions and render buffers remain intact. Small cylindrical fittings retain their full source detail at distance. The sampled domestic map falls from 1,392 persistent architecture batches to 92.

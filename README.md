@@ -4,6 +4,10 @@ A first-person found-footage horror game with 27 fixed dimension maps: a deserte
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Clear black ink
+
+Recovered scraps, puzzle clues, handwritten pages, field observations and key labels now use solid black ink at full opacity. Recovered note text is larger, and physical scraps use black ink on lighter paper. Paper keeps its texture; notes and saved writing keep their content.
+
 ## Clearer puzzle controls and task tracking
 
 **O** opens the notebook’s **Tasks & current job** page. Each world keeps an ordered stage checklist, its active preparation or main instrument, distance and floor. A small in-game tracker follows that same task and advances as work is completed. The task page offers plain operating instructions, the original clue and an optional **Show the target marks** hint comparing current readings with the required pattern. Notebook text now uses larger dark ink on paper; the cover and screen framing have neutral edges.

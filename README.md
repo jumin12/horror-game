@@ -4,6 +4,22 @@ A first-person found-footage horror game with 27 fixed dimension maps: a deserte
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Darker materials and lighting
+
+The freight cathedral now has a fitted receiving gallery, an enclosed inspection counter, a corrugated freight enclosure, roof glazing and supported full-height rack piers. Cargo uses shipping dimensions. The other dimensions retain their own construction vocabulary; they do not share the receiving gallery.
+
+Across all 27 maps, arrival areas use their world's primary floor finish, and balcony undersides use ceiling finishes rather than flooring. Photographic materials now have surface-specific roughness, restrained normal strength, physical concrete joints and stationary wear. Painted structural steel no longer uses a copper photograph. Extra practical lights mount on real route-side piers. Darker ambient light, dusk skies and darker distant air preserve local pools of light and the flashlight's purpose. The opening still begins in a normal daylight neighborhood.
+
+Four flashlight housings were rebuilt in Blender with machined collars, cooling lips and attached clips. UV-authored gloves retain their leather detail with a corrected matte response. Walking, running, crouching, steep looks, equipping, reloading and throwing retain the same connected wrist and grip. Optical grain remains, with less general washout. Door previews and entered scenes share fixture aiming, output and HDR lighting.
+
+Camera, doorway and water-reflection views now keep separate conservative instance selections and GPU buffers. This avoids rebuilding a shared selection between views while retaining the exact source geometry, materials, lights and shadow resolution. The single HTML file stays below GitHub's 100 MiB limit; the existing model/PBR/audio archive remains byte-identical. The new held gear shares identical mesh parts without changing its geometry.
+
+The new 27-map audit passes **451 routes, 520 junctions, 3,498 interaction approaches and 11,576 stair samples**. A local RTX 4080 test at fixed **1440 × 1080 Ultra, adaptive resolution disabled**, measured **60 FPS closed, 59.7 at the open doorway, 59 during crossing and 60 inside**. Four visible hunters plus background dimension preparation averaged **59.3 FPS** with a 14.4 ms median CPU frame. Occasional frame spikes remain; these samples do not establish a universal locked 60 FPS. One startup sample took 26.5 seconds. A cold unprepared dimension still required 14.8 seconds of background work; an already prepared door's E handler took 1.7 ms.
+
+Validation also passes 85 gameplay checks, 21 native two-browser co-op checks, nine equipment checks covering 14,952 animation frames, and 29 atlas UI checks. All 27 final arrival views were captured and reviewed. Thirty-six HDR render comparisons stay within half-float and transform rounding tolerances; no JavaScript or WebGL errors were found.
+
+Co-op peers must refresh to the same build (protocol `coop-layout-9`). Saves, puzzles, notes, creature identities and the 27 map footprints remain. This is a visual rebuild and material/lighting pass; it does not claim parity with a curated reference scene or an Unreal Engine production.
+
 ## Clear black ink
 
 Recovered scraps, puzzle clues, handwritten pages, field observations and key labels now use solid black ink at full opacity. Recovered note text is larger, and physical scraps use black ink on lighter paper. Paper keeps its texture; notes and saved writing keep their content.

@@ -93,7 +93,7 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 - Landmark courts: The exposed breakfast room; The maintenance bridge; The window that faces inward.
 - Spatial pacing: 20 checked junction connections; 13 authored route nodes; 4 macro circuits; 3 fitted compression/arcade passages; 3 initial court furniture placements before the world-wide uniqueness pass.
 - Discoveries: 11 wings, 5 POIs, 18 route compartments spanning 513 m, 4 physical preparation/discovery installations.
-- Task sites: separation 307–558 m; 128 checked approaches.
+- Task sites: separation 307–558 m; 129 checked approaches.
 - Audit: all tested district links, entrances, interaction approaches, tread samples and discovery spurs pass.
 
 ## 9. The store beyond closing
@@ -309,6 +309,4 @@ Extracted from the actual built game, campaign 4919. Coordinates are metres, Y u
 
 79 fitted passage scenes use 27 world-specific construction profiles. Physical headers and glazed canopies take part in collision and clearance. Curved colonnade spans bear on their columns; upper apartment balconies have continuous supports. Furniture placement uses complete model bounds, floor support, column clearance and checked standing approaches.
 
-3497 interaction approaches, 451 district links, 520 junction connections and 11576 tread samples pass the built-world audit.
-
-158 actual E-key actions switch the passage circuits off and back on, checking source, indicator and final actuator pose. An actual W-key traversal through a fitted passage passes in all 27 dimensions.
+3498 interaction approaches, 451 district links, 520 junction connections and 11576 tread samples pass the built-world audit.

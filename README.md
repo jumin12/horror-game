@@ -4,6 +4,18 @@ A first-person found-footage horror game with 27 fixed dimension maps: a deserte
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Clearer puzzle controls and task tracking
+
+**O** opens the notebook’s **Tasks & current job** page. Each world keeps an ordered stage checklist, its active preparation or main instrument, distance and floor. A small in-game tracker follows that same task and advances as work is completed. The task page offers plain operating instructions, the original clue and an optional **Show the target marks** hint comparing current readings with the required pattern. Notebook text now uses larger dark ink on paper; the cover and screen framing have neutral edges.
+
+Fitted controls accept **E or left click**, with a precise central aim marker and a nearby readout. Aim tolerance follows screen angle and selects the nearest aimed fitting, including instruments attached to transformed parents. Walls, the front of the machine and reach still matter. **Hold E or LMB** to keep a co-op brace held; looking at the other instrument no longer releases it. Releasing the button, leaving reach, pausing or disconnecting still lets go. Loose objects retain their normal mouse grab/throw handling. Puzzle rules, separate solo/co-op mechanisms and world layouts are preserved.
+
+Startup avoids redundant temporary render objects when their exact shader variant, buffers and bindings are already prepared. Loading progress updates the DOM only when its displayed value changes. All three arrival worlds, shader preparation, texture/model detail and sound archives remain intact. The dust update now performs one shared floor query instead of repeating the identical query for each of its 180 particles.
+
+In one matched local RTX 4080 sample at fixed **1440 × 1080 Ultra with adaptive resolution disabled**, preparation fell from **45.9 to 42.4 seconds**, sampled interior playback rose from **42.7 to 46.0 FPS**, and crossing rose from **35.9 to 37.1 FPS**. The closed estate remained at 60 FPS; the open doorway varied from 37.5 to 35.9 FPS. These are local measurements, and heavy doorway views still do not hold a locked 60 FPS. No graphics, texture, lighting or particle detail was reduced.
+
+Validation passes **85 gameplay checks**, **23 focused control/task checks** and **13 native two-browser co-op puzzle checks**, with no JavaScript or WebGL errors. Hint checks cover all 27 dimensions; the puzzle-rule suites cover 54 solo field puzzles, 81 co-op stages and all 27 final apparatus rules. Optional hints only reveal information: carrying parts, adjusting controls, partner holds and completion tests still require actual interaction.
+
 ## Passage construction and map continuity
 
 The 27 enormous maps now have **79 fitted passage scenes**, using a different construction profile in every dimension: glazed shelters, copper arches, garden trellises, freight trusses, drying galleries, intake ducts, domestic porches and other local structures. Posts, footings, tied roof members, attached fittings and selected enclosed bays give the district routes more distinct pauses and reveals. Existing footprints, landmark courts, main puzzles, discoveries and creature rosters remain intact.

@@ -60,3 +60,5 @@ The paired-puzzle release uses the same static hosting configuration. No new env
 The exploration-map release uses the same static hosting settings. Refresh each player’s game for the compatible map protocol.
 
 The equipment and layout update uses the same Render static configuration. All co-op players must refresh for `coop-handling-6`; no additional Render service or environment variables are required.
+
+The live co-op update uses the same static hosting configuration and protocol `coop-live-10`; every player must refresh. A host who opens a menu, the notebook or another tab no longer pauses the shared world: guests keep moving, interacting and solving puzzles. A background-tab worker keeps a hidden host simulating without rendering. Joining no longer recompiles every shader (remote torches use one fixed, prewarmed light slot), and static world state is sent only when it changes. The embedded handwriting font is now WOFF, which keeps the standalone file under GitHub's 100 MiB limit.

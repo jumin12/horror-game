@@ -4,6 +4,20 @@ A first-person found-footage horror game with 27 fixed dimension maps: a deserte
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Live co-op, creature motion and world overhaul
+
+**Co-op no longer freezes.** Joining took about 26 seconds and froze the guest for 21 seconds: every remote player added a scene light, which made three.js recompile every shader (the same happened whenever someone toggled a torch). Remote torches now share one fixed, prewarmed light slot, remote-player materials are warmed during preparation, and a guest joins in about 2–4 seconds with no long stalls. A host who opens the pause menu, notebook or tapes, alt-tabs or backgrounds the tab no longer stops the shared world: guests keep moving, opening doors, solving puzzles and being hunted, and a worker heartbeat keeps a hidden host simulating. Static world state is sent only when it changes (with keyframes), joins are re-sent as soon as the directory connects, creature head-tracking targets are synchronized, and the party roster shows join/leave notices. Peers must refresh to protocol `coop-live-10`.
+
+**Co-op players are distinguishable.** Each slot has its own jacket colour, a fitted ribbed knit watch cap modelled in Blender, a soft visible torch beam, a name tag that fades with distance, and a matching chip in the party HUD.
+
+**Creatures move better.** Stride length follows ground speed, feet plant instead of sliding (stop-and-turn foot slide falls from metres to centimetres), bodies lean, bob and shift weight, insects use tripod gaits, quadrupeds move from walk to trot, worms slither and rear, moths flap and dive. Attacks have a visible windup, a committed lunge and an overshooting recovery; idle creatures breathe, track the player's eyes and twitch on per-creature timings that stay identical for co-op guests.
+
+**Worlds have depth and life.** Each of the 27 dimensions has its own fog, shadow tint and accent light. Quest routes are lined with motivated standing lamps (some dead), empty halls get lit prop vignettes, baked fixture light now reaches district floors, and nearby lamps carry soft fog halos. New Blender set dressing — cloth-simulated dust sheets over an armchair and a table, a collapsed suspended ceiling, a sagging carton stack and a laundry line of hanging sheets — appears in domestic, storage, office, signal, transit and water areas.
+
+**Clearer HUD and menus.** The objective card, tips, interaction prompt, readouts and toasts no longer overlap; the key strip, pause, settings and co-op lobby share one visual language; mobile and short-landscape layouts were rebuilt; and a first visit shows a "Downloading the recording" state instead of a static 0%.
+
+The standalone file stays under GitHub's 100 MiB limit (98.5 MiB) through lossless changes: byte-identical mesh arrays are stored once and grouped by kind, and the handwriting font is embedded as WOFF.
+
 ## Darker materials and lighting
 
 The freight cathedral now has a fitted receiving gallery, an enclosed inspection counter, a corrugated freight enclosure, roof glazing and supported full-height rack piers. Cargo uses shipping dimensions. The other dimensions retain their own construction vocabulary; they do not share the receiving gallery.

@@ -4,6 +4,40 @@ A first-person found-footage horror game with 27 fixed dimension maps: a deserte
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Horror, atmosphere and set-piece overhaul
+
+**Creatures are horrifying up close.** All 56 inhabitants carry new Blender anatomy:
+- **Faces:** split vertical maws with torn lips and two rows of broken, stained teeth; ear-to-ear grins; clustered, stitched or jaundiced eyes.
+- **Bodies:** ribcages that open, lamprey throats, raw hinged snake jaws, toothed proboscises, and hooked claws on lengthened fingers.
+- **Skin:** a shared flesh shader adds wet, bruised, veined skin, blood that pools and drips, and eyeshine that glows back at the torch.
+- **Readable under the torch:** pale creatures no longer burn out to white silhouettes; a per-creature exposure gain follows the torch's real beam.
+- **Motion:** heads snap past natural limits, shoulders jerk, fingers creep and hook, and maws gasp, gape and unhinge on the strike. All of it is driven by synced state, so co-op guests see the same thing.
+
+**New sound design (ElevenLabs).**
+- **Creature calls:** every creature has new notice and attack calls, scaled from colossal bellows to chittering shrieks.
+- **Pursuit:** a chase bed rises while something hunts you, sighting stingers play when you first see a creature, rare distant calls sound when nothing is near, and a close strike makes a tearing hit.
+- **Objects:** every new interactive object has its own sound.
+
+**Lighting and atmosphere.**
+- **Lit air:** fittings pour soft cones of lit air onto floor pools, and distant rows of lights glow through haze, so huge halls read as depth.
+- **Fog:** layered fog is thicker near the floor.
+- **Failing fixtures:** some lamps hum, sputter or strobe.
+- **Torch:** a reflector-shaped beam.
+- **Surfaces and grade:** about a thousand decals per world (grime, leaks, mould, soot, standing water, footprints and a few blood scenes), a per-world colour grade, wider bloom and lens dirt.
+- **No runtime lights:** nothing adds a light at runtime, so no shader ever recompiles mid-game.
+
+**Worlds have places worth finding.**
+- **Story scenes:** 92 authored set pieces across the 27 dimensions (3–4 per world, each with its own story, notes and practical lamp), such as a frozen waiting room, a ticket office, a lamp room at a mine shaft or a hotel reception at the high-water mark.
+- **Interactives:**
+  - **Bells and phones:** service bells; phones that ring as you approach and play the world's voice tape.
+  - **Sound sources that lure creatures:** valve radios, TVs and gramophones.
+  - **Lamps and storage:** pull-cord lamps; filing cabinets and lockers with notes, scares and one supply per world.
+  - **Scripted moments:** a door that creaks open by itself, a paint tin that falls and alerts creatures, and checkpoint barriers.
+- **Between scenes:** hanging wayfinding signs, themed dressing, lanterns and debris trails fill the halls.
+- **Map and co-op:** everything appears on the notebook map and runs host-authoritatively in co-op.
+
+The game still ships as one standalone `index.html` that works offline. Embedded assets are now packed as basE91 text instead of base64, which saved about 7.7 MB. Co-op peers must refresh to protocol `coop-live-11`.
+
 ## Live co-op, creature motion and world overhaul
 
 **Co-op no longer freezes.** Joining took about 26 seconds and froze the guest for 21 seconds: every remote player added a scene light, which made three.js recompile every shader (the same happened whenever someone toggled a torch). Remote torches now share one fixed, prewarmed light slot, remote-player materials are warmed during preparation, and a guest joins in about 2–4 seconds with no long stalls. A host who opens the pause menu, notebook or tapes, alt-tabs or backgrounds the tab no longer stops the shared world: guests keep moving, opening doors, solving puzzles and being hunted, and a worker heartbeat keeps a hidden host simulating. Static world state is sent only when it changes (with keyframes), joins are re-sent as soon as the directory connects, creature head-tracking targets are synchronized, and the party roster shows join/leave notices. Peers must refresh to protocol `coop-live-10`.

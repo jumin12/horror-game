@@ -4,6 +4,38 @@ A first-person found-footage horror game with 27 fixed dimension maps: a deserte
 
 **[Play on GitHub Pages](https://jumin12.github.io/horror-game/)** · [Render hosting instructions](HOSTING.md)
 
+## Sound, hunting creatures, props and fast loading
+
+**The sound design is rebuilt.**
+- **Breathing:** silent when you're calm. Running, recovering, fear and hiding play single breaths from pools of 7–12 takes, timed to the breathing cycle, and hiding holds the breath. Wheezy takes were rejected.
+- **Footsteps:** every surface has 10 walk, 9 run and 8 creep takes, plus scuffs on stops and turns, landings and a quiet gear rustle. A step never repeats the previous take.
+- **Ambience:** each world has two layered beds that don't audibly loop, plus 13 banks of spatial sounds (creaks, drips, pipes, doors, wind, distant steps, knocks) that grow busier as tension rises. Reverb matches the space: room, corridor, hall, tiled, glass, tunnel or outdoors.
+- **Creatures:** three alert and three attack takes each, wet breathing and joint clicks up close, their own claw, pad, drag and heavy-step sounds, and a new chase bed. Loudness is set per category, with a limiter.
+
+**Creatures hunt properly.**
+- **Solid bodies:** you can no longer walk through a creature, and creatures no longer overlap you or each other.
+- **Fast and relentless:** they react in about a quarter of a second, reach full speed in a third, cut you off, follow you through doors, lunge at where you're heading and search after losing you. Sprinting in a straight line escapes about one chase in seven; breaking line of sight, hiding and doors are how you survive.
+- **Personalities:** statues that freeze while lit and then surge, stalkers at the edge of the beam, corner peekers, ceiling droppers, mimics standing among the props, flankers and false retreats.
+- **Animation:** head snaps, out-of-sync limbs, broken-joint gaits, all-fours scrambles, convulsions, and coiled lunges with follow-through.
+- **Appearance:** corpse-pale skin with sores, rotting cloth, bloodshot eyes with a different pupil for each creature, hunched posture, bone spurs and drool. The two smallest creatures and the spider are now larger and readable at a distance.
+
+**The worlds are richer and more believable.**
+- **Props:** 82 new Blender props by theme (hospital, office, transit, residential, industrial, hotel and pool, theatre, laundry, museum, archive, debris), arranged into themed micro-scenes against real walls and within torch range of the routes.
+- **Layouts:**
+  - mid-ground buildings in 16 worlds
+  - chokepoint walls with a single lit doorway
+  - landmarks over junctions
+  - skylight shafts in 17 worlds
+  - 130 hiding lockers
+  - new route loops for escaping a chase
+  - several layouts for counter and vigil scenes
+
+**Loading is about twice as fast.**
+- Play starts as soon as the nearest doorway is ready; the other two prepare in the background.
+- Materials share one shader between doorway views and walking inside, creature shaders went from 20 to 4, and the light bake is about 20 times faster. Shader programs compiled at startup fell from 382 to 194, and main-thread startup work roughly halved.
+
+Co-op uses protocol `coop-live-12`, so every player must refresh.
+
 ## Horror, atmosphere and set-piece overhaul
 
 **Creatures are horrifying up close.** All 56 inhabitants carry new Blender anatomy:
